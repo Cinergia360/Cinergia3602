@@ -23,10 +23,10 @@
   --border-mid: #dcdcdc;
 
   /* Paleta Cinergia360 */
-  --c360-indigo: #4c4e85;
+  --c360-indigo: #0D09E6;
   --c360-cream: #f8f6e4;
-  --c360-orange: #f09413;
-  --c360-lime: #cfd809;
+  --c360-orange: #DE2173;
+  --c360-lime: #CEF03A;
   --c360-peach: #eeb3a8;
   --c360-lilac: #a895cb;
 
@@ -113,7 +113,7 @@ body {
 }
 
 .btn:focus-visible {
-  outline: 2px solid var(--c360-orange);
+  outline: 2px solid var(--c360-indigo);
   outline-offset: 2px;
 }
 
@@ -282,7 +282,7 @@ body {
   height: 78%;
   border-radius: 999px;
   background:
-    radial-gradient(circle, rgba(76,78,133,0.07) 0%, rgba(168,149,203,0.04) 45%, rgba(255,255,255,0) 72%);
+    radial-gradient(circle, rgba(13,9,230,0.06) 0%, rgba(206,240,58,0.04) 45%, rgba(255,255,255,0) 72%);
   z-index: 0;
   pointer-events: none;
 }
@@ -413,7 +413,7 @@ body {
 }
 
 .componente-slide:focus-visible .componente-slide-inner {
-  box-shadow: 0 0 0 3px rgba(76,78,133,0.22), var(--shadow-card);
+  box-shadow: 0 0 0 3px rgba(13,9,230,0.22), var(--shadow-card);
 }
 
 .componentes-controls {
@@ -468,7 +468,7 @@ body {
 }
 
 .carousel-btn:focus-visible {
-  outline: 2px solid var(--c360-indigo);
+  outline: 2px solid #0D09E6;
   outline-offset: 2px;
 }
 
@@ -517,7 +517,7 @@ body {
   font-weight: 800;
   font-size: 1.2rem;
   margin-bottom: 0.9rem;
-  box-shadow: 0 8px 20px rgba(76, 78, 133, 0.25);
+  box-shadow: 0 8px 20px rgba(13,9,230,0.25);
 }
 
 .concepto-manifiesto h3 {
@@ -540,7 +540,7 @@ body {
   gap: 0.6rem;
   align-items: start;
   background: var(--c360-cream);
-  border: 1px solid rgba(76,78,133,0.08);
+  border: 1px solid rgba(13,9,230,0.08);
   border-radius: 12px;
   padding: 0.75rem;
 }
@@ -575,9 +575,9 @@ body {
   width: 2px;
   background: linear-gradient(
     180deg,
-    rgba(76,78,133,0.18),
-    rgba(168,149,203,0.2),
-    rgba(240,148,19,0.18)
+    rgba(13,9,230,0.22),
+    rgba(206,240,58,0.28),
+    rgba(222,33,115,0.22)
   );
   border-radius: 999px;
   pointer-events: none;
@@ -607,14 +607,14 @@ body {
 
 .dimension-item:hover {
   transform: translateY(-2px) scale(1.1);
-  border-color: rgba(76, 78, 133, 0.22);
+  border-color: rgba(13,9,230,0.20);
   box-shadow: 0 14px 28px rgba(0,0,0,0.08);
   z-index: 3;
 }
 
 .dimension-item:focus-within {
   transform: translateY(-2px) scale(1.1);
-  border-color: rgba(76, 78, 133, 0.22);
+  border-color: rgba(13,9,230,0.20);
   box-shadow: 0 14px 28px rgba(0,0,0,0.08);
   z-index: 3;
 }
@@ -678,19 +678,19 @@ body {
 
 /* Colores por dimensión */
 .dim-espacial .dimension-marker,
-.dim-espacial .dimension-icon { background: var(--c360-indigo); }
+.dim-espacial .dimension-icon { background: #0D09E6; }
 
 .dim-sensorial .dimension-marker,
-.dim-sensorial .dimension-icon { background: var(--c360-orange); }
+.dim-sensorial .dimension-icon { background: #DE2173; }
 
 .dim-cognitiva .dimension-marker,
-.dim-cognitiva .dimension-icon { background: var(--c360-lilac); }
+.dim-cognitiva .dimension-icon { background: #5a56c8; }
 
 .dim-emocional .dimension-marker,
-.dim-emocional .dimension-icon { background: #d18f84; }
+.dim-emocional .dimension-icon { background: #b81a60; }
 
 .dim-informativa .dimension-marker,
-.dim-informativa .dimension-icon { background: #8e9900; }
+.dim-informativa .dimension-icon { background: #6d8800; }
 
 /* ================= PANELES (base para tarjetas de info) ================= */
 .panel-card {
@@ -863,14 +863,14 @@ body {
 
 .contacto a:hover {
   opacity: 0.9;
-  color: var(--c360-peach);
+  color: #CEF03A;
 }
 
 .contacto i {
   font-size: 0.9rem;
   opacity: 0.8;
   margin-top: 0.2rem;
-  color: var(--c360-peach);
+  color: #CEF03A;
 }
 
 .redes-icons {
@@ -887,7 +887,7 @@ body {
 .redes-icons a:hover {
   transform: translateY(-2px);
   opacity: 1;
-  color: var(--c360-orange);
+  color: #CEF03A;
 }
 
 .contacto-footer {

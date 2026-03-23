@@ -6,16 +6,16 @@
 
 /* ====== TOKENS ====== */
 :root {
-  --c360-indigo: #4c4e85;
+  --c360-indigo: #0D09E6;
   --c360-cream:  #f8f6e4;
-  --c360-orange: #f09413;
-  --c360-lime:   #cfd809;
+  --c360-orange: #DE2173;
+  --c360-lime:   #CEF03A;
   --c360-peach:  #eeb3a8;
   --c360-lilac:  #a895cb;
 
-  --comp-accent:        #8b72b8;
-  --comp-accent-soft:   rgba(168,149,203,0.10);
-  --comp-accent-border: rgba(168,149,203,0.22);
+  --comp-accent:        #0D09E6;
+  --comp-accent-soft:   rgba(13,9,230,0.07);
+  --comp-accent-border: rgba(13,9,230,0.16);
 
   --bg:    #f5f4f1;
   --paper: #ffffff;
@@ -37,8 +37,8 @@ body {
   font-family: 'Lexend', system-ui, sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(900px 600px at 22% 8%,  rgba(168,149,203,0.07), transparent 60%),
-    radial-gradient(900px 600px at 72% 20%, rgba(240,148,19,0.04),   transparent 60%),
+    radial-gradient(900px 600px at 22% 8%,  rgba(13,9,230,0.05),  transparent 60%),
+    radial-gradient(900px 600px at 72% 20%, rgba(222,33,115,0.04), transparent 60%),
     var(--bg);
   line-height: 1.5;
 }
@@ -109,7 +109,7 @@ body {
 }
 
 .comp-btn--primary { background: var(--comp-accent); color: #fff; }
-.comp-btn--primary:hover { background: #7760a0; transform: translateY(-2px); }
+.comp-btn--primary:hover { background: #0a07c2; transform: translateY(-2px); }
 
 .comp-btn--ghost {
   background: rgba(255,255,255,0.75);
@@ -118,7 +118,7 @@ body {
 }
 .comp-btn--ghost:hover { background: #fff; transform: translateY(-2px); }
 
-.comp-btn:focus-visible { outline: 2px solid var(--c360-orange); outline-offset: 2px; }
+.comp-btn:focus-visible { outline: 2px solid #0D09E6; outline-offset: 2px; }
 
 /* ====== SECCIONES ====== */
 .comp-section {
@@ -203,10 +203,10 @@ body {
   border: 1px solid transparent;
 }
 
-.comp-card__status--ok   { background: rgba(79,143,79,0.09); color: #376637; border-color: rgba(79,143,79,0.18); }
-.comp-card__status--ok i { color: #4f8f4f; }
-.comp-card__status--soon   { background: rgba(240,148,19,0.09); color: #8a5500; border-color: rgba(240,148,19,0.18); }
-.comp-card__status--soon i { color: var(--c360-orange); }
+.comp-card__status--ok   { background: rgba(206,240,58,0.18); color: #344300; border-color: rgba(206,240,58,0.42); }
+.comp-card__status--ok i { color: #4d6200; }
+.comp-card__status--soon   { background: rgba(18,18,18,0.05); color: rgba(18,18,18,0.58); border-color: rgba(18,18,18,0.10); }
+.comp-card__status--soon i { color: rgba(18,18,18,0.42); }
 
 /* ====== PANEL ====== */
 .comp-panel {

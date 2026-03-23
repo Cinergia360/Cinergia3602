@@ -11,8 +11,8 @@
   --nav-text: #121212;
   --nav-text-sub: rgba(18, 18, 18, 0.55);
   --nav-border: rgba(18, 18, 18, 0.10);
-  --nav-hover-bg: rgba(76, 78, 133, 0.07);
-  --nav-active-color: #4c4e85;
+  --nav-hover-bg: rgba(13,9,230,0.06);
+  --nav-active-color: #0D09E6;
   --nav-height: 62px;
   --nav-radius: 8px;
 
@@ -66,7 +66,7 @@
 }
 
 .site-nav__brand:focus-visible {
-  outline: 2px solid #4c4e85;
+  outline: 2px solid #0D09E6;
   outline-offset: 2px;
 }
 
@@ -113,7 +113,7 @@
 }
 
 .site-nav__link:focus-visible {
-  outline: 2px solid #4c4e85;
+  outline: 2px solid #0D09E6;
   outline-offset: 2px;
 }
 
@@ -135,11 +135,11 @@
 }
 
 .site-nav__toggle:hover {
-  background: rgba(76, 78, 133, 0.12);
+  background: rgba(13,9,230,0.10);
 }
 
 .site-nav__toggle:focus-visible {
-  outline: 2px solid #4c4e85;
+  outline: 2px solid #0D09E6;
   outline-offset: 2px;
 }
 
@@ -175,7 +175,7 @@
 }
 
 .site-breadcrumb__link:hover {
-  color: #4c4e85;
+  color: #0D09E6;
 }
 
 .site-breadcrumb__sep {
@@ -233,6 +233,52 @@
 
 @media (max-width: 480px) {
   .site-nav__brand-sub {
+    display: none;
+  }
+}
+
+/* ====== BOTÓN VOLVER AL INICIO (subpáginas) ====== */
+.back-to-home {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.1rem;
+  background: #0D09E6;
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: 'Lexend', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.88rem;
+  line-height: 1;
+  box-shadow: 0 4px 20px rgba(13,9,230,0.30);
+  border: 2px solid transparent;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-to-home:hover {
+  background: #DE2173;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(222,33,115,0.30);
+}
+
+.back-to-home:focus-visible {
+  outline: 3px solid #CEF03A;
+  outline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+  .back-to-home {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.8rem;
+    border-radius: 999px;
+  }
+  .back-to-home span {
     display: none;
   }
 }
