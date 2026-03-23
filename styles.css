@@ -86,13 +86,27 @@ body {
 }
 
 .btn.primary {
-  background-color: #fff;
-  color: #111;
+  background-color: var(--c360-indigo);
+  color: #fff;
+  border-color: var(--c360-indigo);
+}
+
+.btn.primary:hover {
+  background-color: var(--c360-orange);
+  border-color: var(--c360-orange);
+  transform: translateY(-2px);
 }
 
 .btn.secondary {
-  border: 1px solid rgba(255,255,255,0.82);
+  background-color: transparent;
+  border: 2px solid rgba(255,255,255,0.72);
   color: #fff;
+}
+
+.btn.secondary:hover {
+  background-color: rgba(255,255,255,0.12);
+  border-color: #fff;
+  transform: translateY(-2px);
 }
 
 .btn.dark-on-light {
@@ -109,12 +123,11 @@ body {
 
 .btn:hover {
   transform: translateY(-2px);
-  opacity: 0.94;
 }
 
 .btn:focus-visible {
-  outline: 2px solid var(--c360-indigo);
-  outline-offset: 2px;
+  outline: 3px solid var(--c360-lime);
+  outline-offset: 3px;
 }
 
 /* ================= HERO ================= */
