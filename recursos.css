@@ -88,75 +88,6 @@
   flex-wrap: wrap;
 }
 
-/* ====== ORIENTACIÓN ====== */
-.res-orientacion {
-  display: grid;
-  grid-template-columns: 1.45fr 1fr;
-  gap: 1rem;
-  margin-bottom: 1.2rem;
-}
-
-.res-panel {
-  border: 1px solid rgba(18,18,18,0.10);
-  background: rgba(255,255,255,0.72);
-  border-radius: 16px;
-  padding: 1rem;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.05);
-}
-
-.res-panel__eyebrow {
-  font-size: 0.74rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--c360-indigo);
-  margin-bottom: 0.35rem;
-}
-
-.res-panel__title {
-  font-size: 1rem;
-  line-height: 1.2;
-  margin-bottom: 0.65rem;
-  font-weight: 700;
-}
-
-.res-guide-list {
-  list-style: none;
-  display: grid;
-  gap: .55rem;
-  margin-top: .15rem;
-}
-
-.res-guide-list li {
-  position: relative;
-  padding-left: 1rem;
-  color: #333;
-  line-height: 1.55;
-  font-size: .92rem;
-}
-
-.res-guide-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: .52rem;
-  width: 6px;
-  height: 6px;
-  border-radius: 999px;
-  background: var(--c360-indigo);
-}
-
-.res-mini-meta {
-  display: grid;
-  gap: .45rem;
-}
-
-.res-mini-meta p {
-  font-size: .92rem;
-  color: #333;
-  line-height: 1.45;
-}
-
 /* ====== SECCIONES ====== */
 .res-section {
   padding: 2.2rem 0;
@@ -181,7 +112,7 @@
   bottom: 0.15rem;
   width: 4px;
   border-radius: 999px;
-  background: linear-gradient(180deg, var(--c360-indigo), rgba(76,78,133,0.25));
+  background: linear-gradient(180deg, var(--c360-indigo), rgba(13,9,230,0.25));
 }
 
 .res-section__label {
@@ -1074,10 +1005,6 @@
   .res-hero {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-
-  .res-orientacion {
-    grid-template-columns: 1fr;
   }
 
   .res-grid,
