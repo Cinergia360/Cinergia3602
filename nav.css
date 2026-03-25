@@ -122,8 +122,8 @@
   display: none;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border: 1px solid var(--nav-border);
   border-radius: var(--nav-radius);
   background: var(--nav-hover-bg);

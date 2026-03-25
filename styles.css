@@ -29,13 +29,14 @@
 
 /* ================= BASE ================= */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   font-family: 'Lexend', system-ui, sans-serif;
   background-color: var(--bg-page);
   color: var(--text-main);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 /* ================= UTILIDADES DE TEXTO ================= */
@@ -66,13 +67,17 @@ body {
 /* ================= BOTONES ================= */
 .btn {
   padding: 0.9rem 1.8rem;
+  min-height: 44px;
   border-radius: 999px;
   font-size: 0.95rem;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.25s ease;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid transparent;
+  touch-action: manipulation;
 }
 
 .btn.primary {
@@ -151,7 +156,7 @@ body {
 /* ================= HERO ================= */
 .hero-lifestyle {
   position: relative;
-  min-height: 92vh;
+  min-height: 92dvh;
   background-color: #000; 
   overflow: hidden;
   display: flex;
@@ -201,7 +206,7 @@ body {
 }
 
 .hero-content h1 {
-  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-size: clamp(2rem, 6vw, 4.5rem);
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -1142,7 +1147,7 @@ body.modal-open {
 
 @media (max-width: 900px) {
   .section {
-    padding: 4.5rem 1.2rem;
+    padding: 4.5rem 1.5rem;
   }
 
   .hero-lifestyle {
@@ -1184,22 +1189,27 @@ body.modal-open {
   }
 }
 
+@media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .hero-lifestyle {
+    min-height: 80dvh;
+  }
+}
+
 @media (max-width: 620px) {
   .componentes-grid {
     grid-template-columns: 1fr;
   }
 
   .hero-content {
-    padding: 3rem 1rem;
+    padding: 2.5rem 1rem;
   }
 
   .hero-subtitle {
     line-height: 1.65;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
   }
 
   .hero-actions {
@@ -1208,6 +1218,11 @@ body.modal-open {
     width: 100%;
     max-width: 360px;
     margin: 0 auto;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
   }
 
   /* Carrusel componentes: solo una tarjeta visible */
