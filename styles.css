@@ -42,7 +42,7 @@ body {
 /* ================= UTILIDADES DE TEXTO ================= */
 .eyebrow {
   display: inline-block;
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -87,8 +87,8 @@ body {
 }
 
 .btn.primary:hover {
-  background-color: var(--c360-orange);
-  border-color: var(--c360-orange);
+  background-color: #0a07c2;
+  border-color: #0a07c2;
   transform: translateY(-2px);
 }
 
@@ -695,7 +695,7 @@ body {
 }
 
 .dimension-kicker {
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
@@ -930,7 +930,7 @@ body {
   margin-top: 2.5rem;
   padding-top: 1.3rem;
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   opacity: 0.7;
 }
 
@@ -987,7 +987,7 @@ body.modal-open {
 }
 
 .modal-eyebrow {
-  font-size: 0.74rem;
+  font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.09em;

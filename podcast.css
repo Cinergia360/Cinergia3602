@@ -64,7 +64,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.75rem;
+  font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.09em;
@@ -130,7 +130,12 @@ body {
 
 .comp-btn--ghost:hover { background: #fff; transform: translateY(-2px); }
 
-.comp-btn:focus-visible {
+.comp-btn--primary:focus-visible {
+  outline: 3px solid #CEF03A;
+  outline-offset: 3px;
+}
+
+.comp-btn--ghost:focus-visible {
   outline: 2px solid #0D09E6;
   outline-offset: 2px;
 }
@@ -146,11 +151,11 @@ body {
 }
 
 .comp-section__label {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.10em;
-  color: rgba(18,18,18,0.48);
+  color: rgba(18,18,18,0.52);
   margin-bottom: 0.3rem;
 }
 
@@ -208,7 +213,7 @@ body {
 
 .comp-card__tag {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -232,10 +237,10 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.76rem;
+  font-size: 0.80rem;
   font-weight: 700;
   border-radius: 999px;
-  padding: 0.28rem 0.55rem;
+  padding: 0.30rem 0.60rem;
   border: 1px solid transparent;
 }
 

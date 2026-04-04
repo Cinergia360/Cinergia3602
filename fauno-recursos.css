@@ -10,8 +10,8 @@
   align-items: center;
   gap: 0.35rem;
   border-radius: 999px;
-  padding: 0.32rem 0.6rem;
-  font-size: 0.74rem;
+  padding: 0.36rem 0.68rem;
+  font-size: 0.80rem;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -74,11 +74,11 @@
 
 .video-card__tag {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  padding: 0.28rem 0.55rem;
+  padding: 0.30rem 0.60rem;
   border-radius: 999px;
   border: 1px solid transparent;
 }
@@ -189,7 +189,7 @@
 }
 
 .partes-accesibles__eyebrow {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.09em;
@@ -299,7 +299,7 @@
 }
 
 .parte-audio-btn:focus-visible {
-  outline: 2px solid var(--c360-indigo);
+  outline: 3px solid #CEF03A;
   outline-offset: 2px;
 }
 
