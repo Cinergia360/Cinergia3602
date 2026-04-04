@@ -64,10 +64,10 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.82rem;
+  font-size: 0.90rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.07em;
   color: var(--comp-accent);
 }
 
@@ -151,10 +151,10 @@ body {
 }
 
 .comp-section__label {
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.10em;
+  letter-spacing: 0.08em;
   color: rgba(18,18,18,0.52);
   margin-bottom: 0.3rem;
 }
@@ -169,7 +169,7 @@ body {
 }
 
 .comp-muted {
-  font-size: 0.92rem;
+  font-size: 0.96rem;
   color: var(--muted);
   line-height: 1.65;
   max-width: 72ch;
@@ -213,10 +213,10 @@ body {
 
 .comp-card__tag {
   display: inline-block;
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   color: var(--comp-accent);
 }
 
@@ -228,7 +228,7 @@ body {
 }
 
 .comp-card__desc {
-  font-size: 0.88rem;
+  font-size: 0.93rem;
   line-height: 1.62;
   color: var(--muted);
 }
