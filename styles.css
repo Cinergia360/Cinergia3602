@@ -59,7 +59,7 @@ body {
 }
 
 .small-help {
-  font-size: 0.9rem;
+  font-size: 0.94rem;
   line-height: 1.6;
   color: var(--text-muted);
 }
@@ -355,10 +355,10 @@ body {
 
 .componente-tag {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.84rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   color: var(--c360-indigo);
   margin-bottom: 0.55rem;
 }
@@ -589,7 +589,7 @@ body {
 }
 
 .manifiesto-note p {
-  font-size: 0.9rem;
+  font-size: 0.94rem;
   line-height: 1.55;
   color: #444;
 }
@@ -695,17 +695,17 @@ body {
 }
 
 .dimension-kicker {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   color: var(--text-muted);
   margin-bottom: 0.35rem;
 }
 
 .dimension-body {
-  font-size: 0.92rem;
+  font-size: 0.96rem;
   line-height: 1.5;
   color: #444;
   max-width: 56ch;

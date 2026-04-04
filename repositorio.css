@@ -181,7 +181,7 @@ body {
   padding-left: 1.1rem;
   color: #333;
   line-height: 1.55;
-  font-size: 0.93rem;
+  font-size: 0.96rem;
 }
 
 .repo-guide-list li::before {
@@ -211,7 +211,7 @@ body {
   align-items: center;
   gap: 0.55rem;
   color: #333;
-  font-size: 0.92rem;
+  font-size: 0.95rem;
 }
 
 .status-dot {
