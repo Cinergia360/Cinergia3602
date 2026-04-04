@@ -90,7 +90,12 @@ body {
   transform: translateY(-2px);
 }
 
-.ficha-btn:focus-visible {
+.ficha-btn--primary:focus-visible {
+  outline: 3px solid #CEF03A;
+  outline-offset: 3px;
+}
+
+.ficha-btn--ghost:focus-visible {
   outline: 2px solid #0D09E6;
   outline-offset: 2px;
 }
@@ -143,8 +148,8 @@ body {
   align-items: center;
   gap: 0.35rem;
   border-radius: 999px;
-  padding: 0.38rem 0.62rem;
-  font-size: 0.74rem;
+  padding: 0.40rem 0.68rem;
+  font-size: 0.80rem;
   font-weight: 700;
   background: rgba(255,255,255,0.92);
   border: 1px solid rgba(18,18,18,0.10);
@@ -161,7 +166,7 @@ body {
 }
 
 .ficha-eyebrow {
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.09em;
@@ -175,9 +180,9 @@ body {
 }
 
 .ficha-tag {
-  font-size: 0.74rem;
+  font-size: 0.80rem;
   font-weight: 600;
-  padding: 0.3rem 0.6rem;
+  padding: 0.34rem 0.68rem;
   border-radius: 999px;
   border: 1px solid rgba(13,9,230,0.14);
   background: rgba(13,9,230,0.06);
@@ -227,11 +232,11 @@ body {
 }
 
 .ficha-section__label {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(18,18,18,0.50);
+  color: rgba(18,18,18,0.52);
   margin-bottom: 0.3rem;
 }
 
@@ -277,11 +282,11 @@ body {
 }
 
 .ficha-dato__label {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: rgba(18,18,18,0.50);
+  color: rgba(18,18,18,0.52);
 }
 
 .ficha-dato__val {

@@ -117,7 +117,7 @@ body {
 
 .repo-eyebrow {
   display: inline-block;
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -287,9 +287,9 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 700;
-  padding: 0.4rem 0.6rem;
+  padding: 0.4rem 0.7rem;
   border-radius: 999px;
   background: rgba(255,255,255,0.92);
   border: 1px solid rgba(18,18,18,0.08);
@@ -313,7 +313,7 @@ body {
 }
 
 .repo-date {
-  font-size: .76rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -321,9 +321,9 @@ body {
 }
 
 .repo-tag {
-  font-size: .76rem;
+  font-size: 0.82rem;
   font-weight: 600;
-  padding: .35rem .6rem;
+  padding: .38rem .7rem;
   border-radius: 999px;
   border: 1px solid rgba(13,9,230,0.14);
   background: rgba(13,9,230,0.06);
@@ -368,6 +368,16 @@ body {
   touch-action: manipulation;
   transition: transform .2s ease, opacity .2s ease, background .2s ease, border-color .2s ease;
   cursor: pointer;
+}
+
+.repo-btn.primary:focus-visible {
+  outline: 3px solid #CEF03A;
+  outline-offset: 3px;
+}
+
+.repo-btn.ghost:focus-visible {
+  outline: 2px solid #0D09E6;
+  outline-offset: 2px;
 }
 
 .repo-btn.primary {
@@ -464,7 +474,7 @@ body {
   }
 
   .repo-item__status {
-    font-size: 0.74rem;
+    font-size: 0.78rem;
   }
 }
 
