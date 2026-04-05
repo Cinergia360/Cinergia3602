@@ -142,16 +142,16 @@ body {
 
 /* ====== SECCIONES ====== */
 .comp-section {
-  padding: 2.2rem 0;
+  padding: 2rem 0;
   border-top: 1px solid var(--line);
 }
 
 .comp-section__head {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.5rem;
 }
 
 .comp-section__label {
-  font-size: 0.88rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -160,7 +160,7 @@ body {
 }
 
 .comp-h2 {
-  font-size: clamp(1.3rem, 2.8vw, 1.75rem);
+  font-size: 1.250;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -169,7 +169,7 @@ body {
 }
 
 .comp-muted {
-  font-size: 0.96rem;
+  font-size: 1rem;
   color: var(--muted);
   line-height: 1.65;
   max-width: 72ch;
