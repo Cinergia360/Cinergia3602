@@ -166,7 +166,7 @@ body {
 }
 
 .ficha-eyebrow {
-  font-size: 0.82rem;
+  font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.09em;
@@ -190,7 +190,7 @@ body {
 }
 
 .ficha-title {
-  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  font-size: 2.25rem;
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -0.03em;
@@ -204,7 +204,7 @@ body {
 }
 
 .ficha-lead {
-  font-size: 0.98rem;
+  font-size: 1.125rem;
   line-height: 1.72;
   color: rgba(18,18,18,0.72);
   max-width: 60ch;
@@ -241,7 +241,7 @@ body {
 }
 
 .ficha-h2 {
-  font-size: clamp(1.35rem, 2.8vw, 1.85rem);
+  font-size: 1.85rem;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -258,7 +258,7 @@ body {
 }
 
 .ficha-section__desc {
-  font-size: 0.95rem;
+  font-size: 1.125rem;
   color: var(--muted);
   line-height: 1.65;
   max-width: 68ch;
@@ -362,18 +362,18 @@ body {
   background: rgba(13,9,230,0.07);
   border: 1px solid rgba(13,9,230,0.14);
   color: var(--c360-indigo);
-  font-size: 1rem;
+  font-size: 1.75rem;
 }
 
 .ficha-dim__title {
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--ink);
   line-height: 1.2;
 }
 
 .ficha-dim__desc {
-  font-size: 0.86rem;
+  font-size: 1.08rem;
   line-height: 1.6;
   color: var(--muted);
 }

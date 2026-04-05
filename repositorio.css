@@ -117,7 +117,7 @@ body {
 
 .repo-eyebrow {
   display: inline-block;
-  font-size: 0.84rem;
+  font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -126,7 +126,7 @@ body {
 }
 
 .repo-hero h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: 2.25rem;
   line-height: 1.05;
   letter-spacing: -0.03em;
   margin-bottom: 0.8rem;
@@ -136,7 +136,7 @@ body {
   max-width: 75ch;
   color: var(--muted);
   line-height: 1.7;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 /* ====== ORIENTACIÓN / GUÍA ====== */
@@ -492,7 +492,7 @@ body {
   }
 
   .repo-hero__lead {
-    font-size: 0.96rem;
+    font-size: 1.125rem;
   }
 
   .repo-panel {

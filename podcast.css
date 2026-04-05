@@ -220,7 +220,7 @@ body {
 }
 
 .comp-card__desc {
-  font-size: 1.050rem;
+  font-size: 1.08rem;
   line-height: 1.62;
   color: var(--muted);
 }
@@ -229,7 +229,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.80rem;
+  font-size: 1rem;
   font-weight: 700;
   border-radius: 999px;
   padding: 0.30rem 0.60rem;

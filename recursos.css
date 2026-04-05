@@ -58,7 +58,7 @@
 
 .res-eyebrow {
   display: inline-block;
-  font-size: 0.76rem;
+  font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -67,7 +67,7 @@
 }
 
 .res-title {
-  font-size: clamp(2rem, 3.8vw, 2.9rem);
+  font-size: 2.25rem;
   line-height: 1.02;
   letter-spacing: -0.03em;
   margin: 0.35rem 0 0.7rem;
@@ -79,7 +79,7 @@
   line-height: 1.7;
   max-width: 62ch;
   margin-bottom: 1rem;
-  font-size: 0.98rem;
+  font-size: 1.125rem;
 }
 
 .res-actions {
@@ -125,7 +125,7 @@
 }
 
 .res-h2 {
-  font-size: 1.55rem;
+  font-size: 1.85rem;
   letter-spacing: -0.02em;
   margin-bottom: .28rem;
   line-height: 1.05;
@@ -144,7 +144,7 @@
 .res-muted {
   color: rgba(18,18,18,0.66);
   line-height: 1.6;
-  font-size: .92rem;
+  font-size: 1.125rem;
   max-width: 72ch;
 }
 
@@ -193,14 +193,14 @@
 }
 
 .res-card__txt h3 {
-  font-size: .98rem;
+  font-size: 1.15rem;
   margin-bottom: .15rem;
   line-height: 1.15;
   font-weight: 700;
 }
 
 .res-card__txt p {
-  font-size: .86rem;
+  font-size: 1.08rem;
   color: rgba(18,18,18,0.68);
   line-height: 1.35;
 }
