@@ -208,12 +208,12 @@ body {
   background: var(--comp-accent-soft);
   border: 1px solid var(--comp-accent-border);
   color: var(--comp-accent);
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .comp-card__tag {
   display: inline-block;
-  font-size: 0.84rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -221,14 +221,14 @@ body {
 }
 
 .comp-card__title {
-  font-size: 1rem;
+  font-size: 1.250rem;
   font-weight: 700;
   line-height: 1.2;
   color: var(--ink);
 }
 
 .comp-card__desc {
-  font-size: 0.93rem;
+  font-size: 1.125rem;
   line-height: 1.62;
   color: var(--muted);
 }
