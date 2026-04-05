@@ -94,12 +94,12 @@ body {
 }
 
 .repo-brand strong {
-  font-size: 0.96rem;
+  font-size: 1rem;
   letter-spacing: 0.01em;
 }
 
 .repo-brand span {
-  font-size: .82rem;
+  font-size: 0.875rem;
   color: var(--muted);
 }
 
@@ -181,7 +181,7 @@ body {
   padding-left: 1.1rem;
   color: #333;
   line-height: 1.55;
-  font-size: 0.96rem;
+  font-size: 1rem;
 }
 
 .repo-guide-list li::before {
@@ -211,7 +211,7 @@ body {
   align-items: center;
   gap: 0.55rem;
   color: #333;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .status-dot {
@@ -287,7 +287,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.82rem;
+  font-size: 0.875rem;
   font-weight: 700;
   padding: 0.4rem 0.7rem;
   border-radius: 999px;
@@ -313,7 +313,7 @@ body {
 }
 
 .repo-date {
-  font-size: 0.82rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -321,7 +321,7 @@ body {
 }
 
 .repo-tag {
-  font-size: 0.82rem;
+  font-size: 0.875rem;
   font-weight: 600;
   padding: .38rem .7rem;
   border-radius: 999px;
@@ -332,7 +332,7 @@ body {
 
 /* Título y descripción */
 .repo-title {
-  font-size: clamp(1.35rem, 2.4vw, 1.95rem);
+  font-size: 1.5rem;
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin-bottom: .65rem;
@@ -343,7 +343,7 @@ body {
   line-height: 1.7;
   margin-bottom: 1rem;
   max-width: 66ch;
-  font-size: 0.96rem;
+  font-size: 1rem;
 }
 
 /* ====== BOTONES ====== */
@@ -362,7 +362,7 @@ body {
   border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: 1rem;
   border: 1px solid transparent;
   min-height: 44px;
   touch-action: manipulation;
@@ -436,7 +436,7 @@ body {
   padding: 1.3rem 1.25rem 1.6rem;
   text-align: center;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
 
 /* ====== ACCESIBILIDAD — visually hidden ====== */
@@ -474,7 +474,7 @@ body {
   }
 
   .repo-item__status {
-    font-size: 0.78rem;
+    font-size: 0.875rem;
   }
 }
 
@@ -514,7 +514,7 @@ body {
   }
 
   .repo-desc {
-    font-size: 0.93rem;
+    font-size: 1rem;
   }
 
   .repo-actions {

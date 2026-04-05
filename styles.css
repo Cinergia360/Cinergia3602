@@ -42,7 +42,7 @@ body {
 /* ================= UTILIDADES DE TEXTO ================= */
 .eyebrow {
   display: inline-block;
-  font-size: 0.84rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -51,7 +51,7 @@ body {
 }
 
 .section-intro {
-  font-size: 1.05rem;
+  font-size: 1.125rem;
   line-height: 1.75;
   color: var(--text-body);
   max-width: 850px;
@@ -59,7 +59,7 @@ body {
 }
 
 .small-help {
-  font-size: 0.94rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: var(--text-muted);
 }
@@ -69,7 +69,7 @@ body {
   padding: 0.9rem 1.8rem;
   min-height: 44px;
   border-radius: 999px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.25s ease;
@@ -111,7 +111,7 @@ body {
 
 .btn.small {
   padding: 0.65rem 1rem;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   background: var(--c360-indigo);
   color: #fff;
 }
@@ -281,11 +281,11 @@ body {
 .componente h3 {
   font-weight: 700;
   margin-bottom: 0.45rem;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 .componente p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.55;
   color: #444;
 }
@@ -378,7 +378,7 @@ body {
 }
 
 .componente-link {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--c360-indigo);
   text-decoration: none;
@@ -556,14 +556,14 @@ body {
 }
 
 .concepto-manifiesto h3 {
-  font-size: 1.28rem;
+  font-size: 1.2rem;
   line-height: 1.15;
   margin-bottom: 0.6rem;
   color: var(--text-main);
 }
 
 .manifiesto-lead {
-  font-size: 0.97rem;
+  font-size: 1rem;
   line-height: 1.68;
   color: #444;
   margin-bottom: 0.9rem;
@@ -589,7 +589,7 @@ body {
 }
 
 .manifiesto-note p {
-  font-size: 0.94rem;
+  font-size: 1rem;
   line-height: 1.55;
   color: #444;
 }
@@ -695,7 +695,7 @@ body {
 }
 
 .dimension-kicker {
-  font-size: 0.88rem;
+  font-size: 0.875rem;
   line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
@@ -705,7 +705,7 @@ body {
 }
 
 .dimension-body {
-  font-size: 0.96rem;
+  font-size: 1rem;
   line-height: 1.5;
   color: #444;
   max-width: 56ch;
@@ -736,7 +736,7 @@ body {
 }
 
 .panel-card h3 {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
   display: flex;
@@ -751,7 +751,7 @@ body {
 }
 
 .panel-lead {
-  font-size: 0.95rem;
+  font-size: 1.08rem;
   line-height: 1.65;
   color: #333;
   margin-bottom: 0.8rem;
@@ -768,7 +768,7 @@ body {
   margin-bottom: 0.7rem;
   color: #222;
   line-height: 1.55;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .checklist li::before {

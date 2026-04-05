@@ -41,7 +41,7 @@
   gap: 0.4rem;
   border-radius: 999px;
   padding: 0.42rem 0.65rem;
-  font-size: 0.78rem;
+  font-size: 0.875rem;
   font-weight: 700;
   background: rgba(255,255,255,0.94);
   border: 1px solid rgba(18,18,18,0.10);
@@ -116,7 +116,7 @@
 }
 
 .res-section__label {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -244,7 +244,7 @@
 }
 
 .video-context__label {
-  font-size: .72rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: .1em;
   font-weight: 700;
@@ -253,14 +253,14 @@
 }
 
 .video-context__content h3 {
-  font-size: 1.22rem;
+  font-size: 1.15rem;
   line-height: 1.1;
   letter-spacing: -0.01em;
   margin-bottom: .45rem;
 }
 
 .video-context__desc {
-  font-size: .97rem;
+  font-size: 1rem;
   color: rgba(18,18,18,0.70);
   line-height: 1.65;
   margin-bottom: .75rem;
@@ -321,7 +321,7 @@
 }
 
 .video-placeholder__inner span {
-  font-size: .86rem;
+  font-size: 0.9rem;
   color: rgba(18,18,18,0.62);
 }
 
@@ -360,7 +360,7 @@
 }
 
 .video-meta-card__label {
-  font-size: .72rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: .08em;
   font-weight: 700;
@@ -368,7 +368,7 @@
 }
 
 .video-meta-card strong {
-  font-size: .94rem;
+  font-size: 1rem;
   line-height: 1.25;
   color: #111;
 }
@@ -409,7 +409,7 @@
 }
 
 .video-card__title {
-  font-size: 1rem;
+  font-size: 1.15rem;
   line-height: 1.2;
   font-weight: 700;
   color: #111;
@@ -438,7 +438,7 @@
   display: inline-flex;
   align-items: center;
   gap: .4rem;
-  font-size: .84rem;
+  font-size: 0.875rem;
   color: rgba(18,18,18,0.68);
 }
 
@@ -451,7 +451,7 @@
   align-items: center;
   border-radius: 999px;
   padding: .32rem .55rem;
-  font-size: .75rem;
+  font-size: 0.8rem;
   font-weight: 700;
   border: 1px solid rgba(18,18,18,0.08);
   background: rgba(255,255,255,0.88);
@@ -495,7 +495,7 @@
 }
 
 .video-single-block__title {
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-size: 1.5rem;
   line-height: 1.12;
   font-weight: 800;
   color: #111;
@@ -504,7 +504,7 @@
 }
 
 .video-single-block__desc {
-  font-size: .96rem;
+  font-size: 1rem;
   line-height: 1.65;
   color: rgba(18,18,18,0.70);
   margin: 0;
@@ -569,7 +569,7 @@
 }
 
 .audio-card__title {
-  font-size: 1rem;
+  font-size: 1.15rem;
   line-height: 1.2;
   font-weight: 700;
   color: #111;
@@ -636,7 +636,7 @@
 }
 
 .model-explorer__eyebrow {
-  font-size: .72rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -645,7 +645,7 @@
 }
 
 .model-explorer__head .res-h3 {
-  font-size: 1.22rem;
+  font-size: 1.15rem;
   margin-bottom: .25rem;
 }
 
@@ -663,7 +663,7 @@
   white-space: nowrap;
   border-radius: 999px;
   padding: .35rem .55rem;
-  font-size: .75rem;
+  font-size: 0.8rem;
   font-weight: 700;
   border: 1px solid rgba(18,18,18,0.08);
   background: rgba(255,255,255,0.85);
@@ -693,7 +693,7 @@
 }
 
 .model-viewer-panel__label {
-  font-size: .72rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: .08em;
   font-weight: 700;
@@ -702,7 +702,7 @@
 }
 
 .model-viewer-panel__top h4 {
-  font-size: 1.02rem;
+  font-size: 1rem;
   line-height: 1.15;
   letter-spacing: -0.01em;
   margin: 0;
@@ -732,7 +732,7 @@
 }
 
 .model-catalog__count {
-  font-size: .75rem;
+  font-size: 0.8rem;
   color: rgba(18,18,18,0.6);
   font-weight: 600;
 }
@@ -780,14 +780,14 @@
 }
 
 .model-catalog-item__content strong {
-  font-size: .92rem;
+  font-size: 1rem;
   line-height: 1.15;
   font-weight: 700;
   color: #111;
 }
 
 .model-catalog-item__content span {
-  font-size: .78rem;
+  font-size: 0.875rem;
   line-height: 1.25;
   color: rgba(18,18,18,0.62);
 }
@@ -842,7 +842,7 @@
 
 .modelo-debug {
   margin-top: .65rem;
-  font-size: .88rem;
+  font-size: 0.875rem;
   color: rgba(18,18,18,0.62);
 }
 
@@ -889,7 +889,7 @@
 }
 
 .model-file-bar__label {
-  font-size: .72rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: .08em;
   font-weight: 700;
@@ -898,12 +898,12 @@
 
 .model-file-bar__content strong {
   line-height: 1.2;
-  font-size: .98rem;
+  font-size: 1rem;
 }
 
 .model-file-bar__content span {
   color: rgba(18,18,18,0.64);
-  font-size: .86rem;
+  font-size: 0.9rem;
   line-height: 1.35;
 }
 
@@ -935,13 +935,13 @@
 .popup-content h3 {
   margin-bottom: .8rem;
   line-height: 1.2;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
 
 .popup-content p {
   line-height: 1.55;
   color: rgba(255,255,255,0.92);
-  font-size: .94rem;
+  font-size: 1rem;
 }
 
 #popupClose {
@@ -978,7 +978,7 @@
 }
 
 #popupAudioBtn i {
-  font-size: .95rem;
+  font-size: 1rem;
 }
 
 /* Estado visual cuando el audio del popup está reproduciéndose */
@@ -1060,7 +1060,7 @@
   }
 
   .res-status {
-    font-size: .75rem;
+    font-size: 0.875rem;
   }
 
   .res-section__head {
@@ -1112,12 +1112,12 @@
   }
 
   .video-single-block__title {
-    font-size: 1.08rem;
+    font-size: 1.2rem;
     line-height: 1.15;
   }
 
   .video-single-block__desc {
-    font-size: .9rem;
+    font-size: 1rem;
     line-height: 1.55;
   }
 

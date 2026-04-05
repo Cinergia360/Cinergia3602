@@ -293,11 +293,11 @@ body {
 }
 
 .comp-embed-placeholder__inner strong {
-  font-size: 0.96rem;
+  font-size: 1rem;
 }
 
 .comp-embed-placeholder__inner span {
-  font-size: 0.83rem;
+  font-size: 0.9rem;
   color: var(--muted);
 }
 
