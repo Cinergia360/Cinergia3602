@@ -64,7 +64,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.07em;
@@ -76,7 +76,7 @@ body {
 }
 
 .comp-hero__title {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 800;
   line-height: 1.03;
   letter-spacing: -0.03em;
@@ -84,7 +84,7 @@ body {
 }
 
 .comp-hero__desc {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.72;
   color: var(--muted);
   max-width: 70ch;
@@ -150,17 +150,9 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.comp-section__label {
-  font-size: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: rgba(18,18,18,0.52);
-  margin-bottom: 0.3rem;
-}
 
 .comp-h2 {
-  font-size: 1.75;
+  font-size: 1.85rem;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -169,7 +161,7 @@ body {
 }
 
 .comp-muted {
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: var(--muted);
   line-height: 1.65;
   max-width: 72ch;
@@ -208,12 +200,12 @@ body {
   background: var(--comp-accent-soft);
   border: 1px solid var(--comp-accent-border);
   color: var(--comp-accent);
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 .comp-card__tag {
   display: inline-block;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -221,14 +213,14 @@ body {
 }
 
 .comp-card__title {
-  font-size: 1.25rem;
+  font-size: 1.150rem;
   font-weight: 700;
   line-height: 1.2;
   color: var(--ink);
 }
 
 .comp-card__desc {
-  font-size: 1rem;
+  font-size: 1.050rem;
   line-height: 1.62;
   color: var(--muted);
 }
