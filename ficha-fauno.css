@@ -149,7 +149,7 @@ body {
   gap: 0.35rem;
   border-radius: 999px;
   padding: 0.40rem 0.68rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 700;
   background: rgba(255,255,255,0.92);
   border: 1px solid rgba(18,18,18,0.10);
@@ -180,7 +180,7 @@ body {
 }
 
 .ficha-tag {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 0.34rem 0.68rem;
   border-radius: 999px;
@@ -198,7 +198,7 @@ body {
 }
 
 .ficha-director {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--muted);
   font-weight: 500;
 }
@@ -232,7 +232,7 @@ body {
 }
 
 .ficha-section__label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -282,7 +282,7 @@ body {
 }
 
 .ficha-dato__label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -303,7 +303,7 @@ body {
   gap: 0.4rem;
 }
 
-.ficha-dato__val--ok i { color: #4d6200; font-size: 0.85em; }
+.ficha-dato__val--ok i { color: #4d6200; font-size: 1rem; }
 
 /* ====== CONTENT GRID (texto) ====== */
 .ficha-content-grid {
@@ -433,7 +433,7 @@ body {
 }
 
 .ficha-recurso__content p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--muted);
   line-height: 1.5;
 }
@@ -458,7 +458,7 @@ body {
   padding: 1.3rem 1.25rem 1.6rem;
   text-align: center;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: 'Lexend', system-ui, sans-serif;
 }
 

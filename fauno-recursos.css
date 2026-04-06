@@ -11,7 +11,7 @@
   gap: 0.35rem;
   border-radius: 999px;
   padding: 0.36rem 0.68rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -74,7 +74,7 @@
 
 .video-card__tag {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -129,14 +129,14 @@
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: rgba(18, 18, 18, 0.55);
 }
 
 .video-card__meta-item i {
   color: var(--c360-indigo);
   opacity: 0.75;
-  font-size: 0.72rem;
+  font-size: 1rem;
 }
 
 /* Video placeholder ajustado para las cards */
@@ -189,7 +189,7 @@
 }
 
 .partes-accesibles__eyebrow {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.09em;
@@ -247,7 +247,7 @@
 .parte-item__marker {
   color: var(--c360-indigo);
   opacity: 0.55;
-  font-size: 0.65rem;
+  font-size: 1rem;
   margin-top: 0.35rem;
 }
 
@@ -278,7 +278,7 @@
   border: 1px solid rgba(76, 78, 133, 0.18);
   background: rgba(76, 78, 133, 0.06);
   color: var(--c360-indigo);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;

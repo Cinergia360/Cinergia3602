@@ -41,7 +41,7 @@
   gap: 0.4rem;
   border-radius: 999px;
   padding: 0.42rem 0.65rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 700;
   background: rgba(255,255,255,0.94);
   border: 1px solid rgba(18,18,18,0.10);
@@ -116,7 +116,7 @@
 }
 
 .res-section__label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -244,7 +244,7 @@
 }
 
 .video-context__label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: .1em;
   font-weight: 700;
@@ -321,7 +321,7 @@
 }
 
 .video-placeholder__inner span {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: rgba(18,18,18,0.62);
 }
 
@@ -360,7 +360,7 @@
 }
 
 .video-meta-card__label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: .08em;
   font-weight: 700;
@@ -419,7 +419,7 @@
 .video-card__desc {
   color: rgba(18,18,18,0.68);
   line-height: 1.55;
-  font-size: .9rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -438,7 +438,7 @@
   display: inline-flex;
   align-items: center;
   gap: .4rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: rgba(18,18,18,0.68);
 }
 
@@ -451,7 +451,7 @@
   align-items: center;
   border-radius: 999px;
   padding: .32rem .55rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   border: 1px solid rgba(18,18,18,0.08);
   background: rgba(255,255,255,0.88);
@@ -579,7 +579,7 @@
 .audio-card__desc {
   color: rgba(18,18,18,0.68);
   line-height: 1.55;
-  font-size: .9rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -636,7 +636,7 @@
 }
 
 .model-explorer__eyebrow {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -663,7 +663,7 @@
   white-space: nowrap;
   border-radius: 999px;
   padding: .35rem .55rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   border: 1px solid rgba(18,18,18,0.08);
   background: rgba(255,255,255,0.85);
@@ -693,7 +693,7 @@
 }
 
 .model-viewer-panel__label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: .08em;
   font-weight: 700;
@@ -726,13 +726,13 @@
 }
 
 .model-catalog__label {
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #111;
 }
 
 .model-catalog__count {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: rgba(18,18,18,0.6);
   font-weight: 600;
 }
@@ -787,14 +787,14 @@
 }
 
 .model-catalog-item__content span {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.25;
   color: rgba(18,18,18,0.62);
 }
 
 .model-catalog-item > i {
   color: rgba(18,18,18,0.45);
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .model-catalog-item.is-active {
@@ -842,7 +842,7 @@
 
 .modelo-debug {
   margin-top: .65rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: rgba(18,18,18,0.62);
 }
 
@@ -889,7 +889,7 @@
 }
 
 .model-file-bar__label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: .08em;
   font-weight: 700;
@@ -903,7 +903,7 @@
 
 .model-file-bar__content span {
   color: rgba(18,18,18,0.64);
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.35;
 }
 
@@ -1060,7 +1060,7 @@
   }
 
   .res-status {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .res-section__head {

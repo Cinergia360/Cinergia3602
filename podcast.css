@@ -297,7 +297,7 @@ body {
 }
 
 .comp-embed-placeholder__inner span {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--muted);
 }
 
@@ -307,7 +307,7 @@ body {
   padding: 1.3rem 1.25rem 1.6rem;
   text-align: center;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: 'Lexend', system-ui, sans-serif;
 }
 

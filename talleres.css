@@ -137,7 +137,7 @@ body {
 .comp-section__head { margin-bottom: 1.3rem; }
 
 .comp-section__label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -268,7 +268,7 @@ body {
   padding: 1.3rem 1.25rem 1.6rem;
   text-align: center;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: 'Lexend', system-ui, sans-serif;
 }
 

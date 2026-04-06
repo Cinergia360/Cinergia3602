@@ -127,7 +127,7 @@
 }
 
 .site-nav__brand-sub {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: var(--nav-text-sub);
   font-weight: 400;
 }
@@ -146,7 +146,7 @@
   border-radius: var(--nav-radius);
   text-decoration: none;
   color: var(--nav-text);
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   white-space: nowrap;
   transition: background 0.18s ease, color 0.18s ease;
@@ -181,7 +181,7 @@
   cursor: pointer;
   flex-shrink: 0;
   transition: background 0.18s ease, border-color 0.18s ease;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .site-nav__toggle:hover {
@@ -207,7 +207,7 @@
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: rgba(18, 18, 18, 0.55);
   flex-wrap: wrap;
 }
@@ -230,7 +230,7 @@
 
 .site-breadcrumb__sep {
   opacity: 0.45;
-  font-size: 0.72rem;
+  font-size: 1rem;
 }
 
 .site-breadcrumb__current {
@@ -268,7 +268,7 @@
   .site-nav__link {
     padding: 0.8rem 0.75rem;
     border-radius: 10px;
-    font-size: 0.95rem;
+    font-size: 1rem;
     border-bottom: 1px solid var(--nav-border);
   }
 
@@ -303,7 +303,7 @@
   text-decoration: none;
   font-family: 'Lexend', system-ui, sans-serif;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1;
   box-shadow: 0 3px 14px rgba(13,9,230,0.28);
   border: 2px solid transparent;
@@ -325,7 +325,7 @@
   .back-to-home {
     top: calc(var(--nav-height, 62px) + 0.65rem);
     left: 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.55rem 0.9rem;
   }
 }

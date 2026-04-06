@@ -99,7 +99,7 @@ body {
 }
 
 .repo-brand span {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--muted);
 }
 
@@ -287,7 +287,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 700;
   padding: 0.4rem 0.7rem;
   border-radius: 999px;
@@ -313,7 +313,7 @@ body {
 }
 
 .repo-date {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -321,7 +321,7 @@ body {
 }
 
 .repo-tag {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: .38rem .7rem;
   border-radius: 999px;
@@ -436,7 +436,7 @@ body {
   padding: 1.3rem 1.25rem 1.6rem;
   text-align: center;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* ====== ACCESIBILIDAD — visually hidden ====== */
@@ -474,7 +474,7 @@ body {
   }
 
   .repo-item__status {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 
