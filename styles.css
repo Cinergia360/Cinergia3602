@@ -42,7 +42,7 @@ body {
 /* ================= UTILIDADES DE TEXTO ================= */
 .eyebrow {
   display: inline-block;
-  font-size: 1rem;
+  font-size: var(--type-section-label);
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -51,7 +51,7 @@ body {
 }
 
 .section-intro {
-  font-size: 1.125rem;
+  font-size: var(--type-section-intro);
   line-height: 1.75;
   color: var(--text-body);
   max-width: 850px;
@@ -59,7 +59,7 @@ body {
 }
 
 .small-help {
-  font-size: 1rem;
+  font-size: var(--type-support);
   line-height: 1.6;
   color: var(--text-muted);
 }
@@ -69,7 +69,7 @@ body {
   padding: 0.9rem 1.8rem;
   min-height: 44px;
   border-radius: 999px;
-  font-size: 1rem;
+  font-size: var(--type-button);
   font-weight: 500;
   text-decoration: none;
   transition: all 0.25s ease;
@@ -111,7 +111,7 @@ body {
 
 .btn.small {
   padding: 0.65rem 1rem;
-  font-size: 1rem;
+  font-size: var(--type-button);
   background: var(--c360-indigo);
   color: #fff;
 }
@@ -198,7 +198,7 @@ body {
 
 .hero-eyebrow {
   color: rgba(255,255,255,0.9);
-  font-size: 1.125rem;
+  font-size: var(--type-hero-label);
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -206,13 +206,13 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 2.25rem;
+  font-size: var(--type-hero-title);
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .hero-subtitle {
-  font-size: 1.125rem;
+  font-size: var(--type-hero-desc);
   line-height: 1.75;
   margin: 0 auto 2.2rem;
   max-width: 850px;
@@ -247,7 +247,7 @@ body {
 }
 
 .section h2 {
-  font-size: 1.85rem;
+  font-size: var(--type-section-title);
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -281,11 +281,11 @@ body {
 .componente h3 {
   font-weight: 700;
   margin-bottom: 0.45rem;
-  font-size: 1.15rem;
+  font-size: var(--type-component-title);
 }
 
 .componente p {
-  font-size: 1rem;
+  font-size: var(--type-body);
   line-height: 1.55;
   color: #444;
 }
@@ -355,7 +355,7 @@ body {
 
 .componente-tag {
   display: inline-block;
-  font-size: 1rem;
+  font-size: var(--type-tag);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -364,21 +364,21 @@ body {
 }
 
 .componente-slide-content h3 {
-  font-size: 1.15rem;
+  font-size: var(--type-component-title);
   font-weight: 700;
   margin-bottom: 0.4rem;
   line-height: 1.2;
 }
 
 .componente-slide-content p {
-  font-size: 1.08rem;
+  font-size: var(--type-component-desc);
   color: #444;
   line-height: 1.55;
   margin-bottom: 0.8rem;
 }
 
 .componente-link {
-  font-size: 1rem;
+  font-size: var(--type-body);
   font-weight: 700;
   color: var(--c360-indigo);
   text-decoration: none;
@@ -550,20 +550,20 @@ body {
   background: var(--c360-indigo);
   color: #fff;
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: var(--type-manifesto);
   margin-bottom: 0.9rem;
   box-shadow: 0 8px 20px rgba(13,9,230,0.25);
 }
 
 .concepto-manifiesto h3 {
-  font-size: 1.2rem;
+  font-size: var(--type-manifesto);
   line-height: 1.15;
   margin-bottom: 0.6rem;
   color: var(--text-main);
 }
 
 .manifiesto-lead {
-  font-size: 1rem;
+  font-size: var(--type-body);
   line-height: 1.68;
   color: #444;
   margin-bottom: 0.9rem;
@@ -589,7 +589,7 @@ body {
 }
 
 .manifiesto-note p {
-  font-size: 1rem;
+  font-size: var(--type-body);
   line-height: 1.55;
   color: #444;
 }
@@ -675,7 +675,7 @@ body {
   display: grid;
   place-items: center;
   color: #fff;
-  font-size: 1rem;
+  font-size: var(--type-body);
   margin-top: 0.05rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -687,7 +687,7 @@ body {
 }
 
 .dimension-head h4 {
-  font-size: 1rem;
+  font-size: var(--type-label);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 0.18rem;
@@ -695,7 +695,7 @@ body {
 }
 
 .dimension-kicker {
-  font-size: 1rem;
+  font-size: var(--type-label);
   line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
@@ -705,7 +705,7 @@ body {
 }
 
 .dimension-body {
-  font-size: 1rem;
+  font-size: var(--type-body);
   line-height: 1.5;
   color: #444;
   max-width: 56ch;
@@ -736,7 +736,7 @@ body {
 }
 
 .panel-card h3 {
-  font-size: 1.15rem;
+  font-size: var(--type-component-title);
   font-weight: 700;
   margin-bottom: 0.75rem;
   display: flex;
@@ -751,7 +751,7 @@ body {
 }
 
 .panel-lead {
-  font-size: 1.08rem;
+  font-size: var(--type-lead);
   line-height: 1.65;
   color: #333;
   margin-bottom: 0.8rem;
@@ -768,7 +768,7 @@ body {
   margin-bottom: 0.7rem;
   color: #222;
   line-height: 1.55;
-  font-size: 1rem;
+  font-size: var(--type-body);
 }
 
 .checklist li::before {
@@ -866,14 +866,14 @@ body {
 }
 
 .contacto h2 {
-  font-size: 1.8rem;
+  font-size: var(--type-section-title);
   font-weight: 700;
   margin-bottom: 1rem;
   color: #f2f2f2;
 }
 
 .contacto h3 {
-  font-size: 1rem;
+  font-size: var(--type-label);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -883,7 +883,7 @@ body {
 
 .contacto p {
   margin-bottom: 0.8rem;
-  font-size: 1rem;
+  font-size: var(--type-body);
   display: flex;
   align-items: flex-start;
   gap: 0.6rem;
@@ -902,7 +902,7 @@ body {
 }
 
 .contacto i {
-  font-size: 1rem;
+  font-size: var(--type-body);
   opacity: 0.8;
   margin-top: 0.2rem;
   color: #CEF03A;
@@ -930,7 +930,7 @@ body {
   margin-top: 2.5rem;
   padding-top: 1.3rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: var(--type-footer);
   opacity: 0.7;
 }
 
@@ -987,7 +987,7 @@ body.modal-open {
 }
 
 .modal-eyebrow {
-  font-size: 1rem;
+  font-size: var(--type-label);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.09em;
@@ -996,7 +996,7 @@ body.modal-open {
 }
 
 .modal-title {
-  font-size: 1.5rem;
+  font-size: var(--type-featured);
   font-weight: 700;
   line-height: 1.15;
   color: #111;
@@ -1014,7 +1014,7 @@ body.modal-open {
   display: grid;
   place-items: center;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: var(--type-body);
   transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
   margin-top: 0.1rem;
 }
@@ -1035,7 +1035,7 @@ body.modal-open {
 }
 
 .modal-desc {
-  font-size: 1rem;
+  font-size: var(--type-body);
   line-height: 1.65;
   color: #555;
   margin-bottom: 1rem;
@@ -1075,12 +1075,12 @@ body.modal-open {
 }
 
 .mapa-fallback strong {
-  font-size: 1rem;
+  font-size: var(--type-body);
   color: #222;
 }
 
 .mapa-fallback span {
-  font-size: 1rem;
+  font-size: var(--type-body);
   color: #777;
   max-width: 40ch;
 }
@@ -1096,7 +1096,7 @@ body.modal-open {
 }
 
 .modal-hint {
-  font-size: 1rem;
+  font-size: var(--type-body);
   color: #777;
   display: flex;
   align-items: center;
@@ -1105,11 +1105,11 @@ body.modal-open {
 
 .modal-hint i {
   color: var(--c360-indigo);
-  font-size: 1rem;
+  font-size: var(--type-body);
 }
 
 .modal-link {
-  font-size: 1rem;
+  font-size: var(--type-body);
   font-weight: 600;
   color: var(--c360-indigo);
   text-decoration: none;
@@ -1289,11 +1289,11 @@ body.modal-open {
   .manifiesto-badge {
     width: 56px;
     height: 56px;
-    font-size: 1rem;
+    font-size: var(--type-body);
   }
 
   .concepto-manifiesto h3 {
-    font-size: 1.1rem;
+    font-size: var(--type-h3);
   }
 
   .dimension-item {
@@ -1304,7 +1304,7 @@ body.modal-open {
   .dimension-icon {
     width: 32px;
     height: 32px;
-    font-size: 1rem;
+    font-size: var(--type-body);
   }
 
   .concepto-lista::before {

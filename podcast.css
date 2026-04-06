@@ -64,7 +64,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.125rem;
+  font-size: var(--type-hero-label);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.07em;
@@ -72,11 +72,11 @@ body {
 }
 
 .comp-hero__label i {
-  font-size: 1rem;
+  font-size: var(--type-body);
 }
 
 .comp-hero__title {
-  font-size: 2.25rem;
+  font-size: var(--type-hero-title);
   font-weight: 800;
   line-height: 1.03;
   letter-spacing: -0.03em;
@@ -84,7 +84,7 @@ body {
 }
 
 .comp-hero__desc {
-  font-size: 1.125rem;
+  font-size: var(--type-hero-desc);
   line-height: 1.72;
   color: var(--muted);
   max-width: 70ch;
@@ -106,7 +106,7 @@ body {
   min-height: 44px;
   border-radius: 999px;
   font-family: 'Lexend', system-ui, sans-serif;
-  font-size: 1rem;
+  font-size: var(--type-button);
   font-weight: 600;
   text-decoration: none;
   border: 1px solid transparent;
@@ -152,7 +152,7 @@ body {
 
 
 .comp-h2 {
-  font-size: 1.85rem;
+  font-size: var(--type-section-title);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -161,7 +161,7 @@ body {
 }
 
 .comp-muted {
-  font-size: 1.125rem;
+  font-size: var(--type-section-desc);
   color: var(--muted);
   line-height: 1.65;
   max-width: 72ch;
@@ -200,12 +200,12 @@ body {
   background: var(--comp-accent-soft);
   border: 1px solid var(--comp-accent-border);
   color: var(--comp-accent);
-  font-size: 1.75rem;
+  font-size: var(--type-component-icon);
 }
 
 .comp-card__tag {
   display: inline-block;
-  font-size: 1rem;
+  font-size: var(--type-tag);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -213,14 +213,14 @@ body {
 }
 
 .comp-card__title {
-  font-size: 1.150rem;
+  font-size: var(--type-component-title);
   font-weight: 700;
   line-height: 1.2;
   color: var(--ink);
 }
 
 .comp-card__desc {
-  font-size: 1.08rem;
+  font-size: var(--type-component-desc);
   line-height: 1.62;
   color: var(--muted);
 }
@@ -229,7 +229,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 1rem;
+  font-size: var(--type-status);
   font-weight: 700;
   border-radius: 999px;
   padding: 0.30rem 0.60rem;
@@ -293,11 +293,11 @@ body {
 }
 
 .comp-embed-placeholder__inner strong {
-  font-size: 1rem;
+  font-size: var(--type-body);
 }
 
 .comp-embed-placeholder__inner span {
-  font-size: 1rem;
+  font-size: var(--type-support);
   color: var(--muted);
 }
 
@@ -307,7 +307,7 @@ body {
   padding: 1.3rem 1.25rem 1.6rem;
   text-align: center;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: var(--type-footer);
   font-family: 'Lexend', system-ui, sans-serif;
 }
 

@@ -94,12 +94,12 @@ body {
 }
 
 .repo-brand strong {
-  font-size: 1rem;
+  font-size: var(--type-nav);
   letter-spacing: 0.01em;
 }
 
 .repo-brand span {
-  font-size: 1rem;
+  font-size: var(--type-meta);
   color: var(--muted);
 }
 
@@ -117,7 +117,7 @@ body {
 
 .repo-eyebrow {
   display: inline-block;
-  font-size: 1.125rem;
+  font-size: var(--type-hero-label);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -126,7 +126,7 @@ body {
 }
 
 .repo-hero h1 {
-  font-size: 2.25rem;
+  font-size: var(--type-hero-title);
   line-height: 1.05;
   letter-spacing: -0.03em;
   margin-bottom: 0.8rem;
@@ -136,7 +136,7 @@ body {
   max-width: 75ch;
   color: var(--muted);
   line-height: 1.7;
-  font-size: 1.125rem;
+  font-size: var(--type-hero-desc);
 }
 
 /* ====== ORIENTACIÓN / GUÍA ====== */
@@ -157,7 +157,7 @@ body {
 }
 
 .repo-panel h2 {
-  font-size: 1rem;
+  font-size: var(--type-body);
   line-height: 1.2;
   margin-bottom: 0.75rem;
 }
@@ -181,7 +181,7 @@ body {
   padding-left: 1.1rem;
   color: #333;
   line-height: 1.55;
-  font-size: 1rem;
+  font-size: var(--type-body);
 }
 
 .repo-guide-list li::before {
@@ -211,7 +211,7 @@ body {
   align-items: center;
   gap: 0.55rem;
   color: #333;
-  font-size: 1rem;
+  font-size: var(--type-body);
 }
 
 .status-dot {
@@ -287,7 +287,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 1rem;
+  font-size: var(--type-status);
   font-weight: 700;
   padding: 0.4rem 0.7rem;
   border-radius: 999px;
@@ -313,7 +313,7 @@ body {
 }
 
 .repo-date {
-  font-size: 1rem;
+  font-size: var(--type-meta);
   font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -321,7 +321,7 @@ body {
 }
 
 .repo-tag {
-  font-size: 1rem;
+  font-size: var(--type-tag);
   font-weight: 600;
   padding: .38rem .7rem;
   border-radius: 999px;
@@ -332,7 +332,7 @@ body {
 
 /* Título y descripción */
 .repo-title {
-  font-size: 1.5rem;
+  font-size: var(--type-featured);
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin-bottom: .65rem;
@@ -343,7 +343,7 @@ body {
   line-height: 1.7;
   margin-bottom: 1rem;
   max-width: 66ch;
-  font-size: 1rem;
+  font-size: var(--type-body);
 }
 
 /* ====== BOTONES ====== */
@@ -362,7 +362,7 @@ body {
   border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: var(--type-button);
   border: 1px solid transparent;
   min-height: 44px;
   touch-action: manipulation;
@@ -436,7 +436,7 @@ body {
   padding: 1.3rem 1.25rem 1.6rem;
   text-align: center;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: var(--type-footer);
 }
 
 /* ====== ACCESIBILIDAD — visually hidden ====== */
@@ -474,7 +474,7 @@ body {
   }
 
   .repo-item__status {
-    font-size: 1rem;
+    font-size: var(--type-status);
   }
 }
 
@@ -492,7 +492,7 @@ body {
   }
 
   .repo-hero__lead {
-    font-size: 1.125rem;
+    font-size: var(--type-hero-desc);
   }
 
   .repo-panel {
@@ -514,7 +514,7 @@ body {
   }
 
   .repo-desc {
-    font-size: 1rem;
+    font-size: var(--type-body);
   }
 
   .repo-actions {

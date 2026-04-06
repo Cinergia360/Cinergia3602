@@ -53,6 +53,48 @@
   --color-soon-border:  rgba(18,18,18,0.10);
   --color-soon-text:    rgba(18,18,18,0.58);
   --color-soon-icon:    rgba(18,18,18,0.42);
+
+  /* ─────────────────────────────────────────────────────────
+     TIPOGRAFÍA — TOKENS GLOBALES
+     Una sola fuente de verdad para font-size en todo el sitio.
+     Modificar aquí afecta a todas las páginas.
+  ──────────────────────────────────────────────────────────── */
+
+  /* Hero */
+  --type-hero-label:      1.125rem; /* eyebrow/kicker encima del h1 */
+  --type-hero-title:      2.25rem;  /* h1 principal de página */
+  --type-hero-desc:       1.125rem; /* párrafo lead debajo del h1 */
+
+  /* Secciones */
+  --type-section-title:   1.85rem;  /* h2 de sección */
+  --type-section-label:   1rem;     /* label uppercase sobre título de sección */
+  --type-section-desc:    1.125rem; /* texto muted/descriptivo de sección */
+  --type-section-intro:   1.125rem; /* párrafo introductorio de sección */
+
+  /* Subjerarquías */
+  --type-featured:        1.5rem;   /* título de item destacado, modal title */
+  --type-h3:              1.1rem;   /* heading de tercer nivel */
+  --type-component-title: 1.15rem;  /* h3 de card o componente */
+  --type-component-desc:  1.08rem;  /* descripción de card o componente */
+  --type-component-icon:  1.75rem;  /* icono de card o dimensión */
+  --type-lead:            1.08rem;  /* panel lead, intro de panel */
+  --type-manifesto:       1.2rem;   /* concepto/manifiesto h3 */
+
+  /* Microjerarquía */
+  --type-tag:             1rem;     /* tags, pills, badges */
+  --type-status:          1rem;     /* badges de estado (disponible, próximo) */
+  --type-label:           1rem;     /* labels uppercase (dato, sección, modelo) */
+  --type-meta:            1rem;     /* metadatos: fecha, autor, duración */
+
+  /* Texto general */
+  --type-body:            1rem;     /* párrafo de contenido general */
+  --type-support:         1rem;     /* textos de apoyo, hints, captions */
+
+  /* UI / Interacción */
+  --type-button:          1rem;     /* botones (primary, ghost, small) */
+  --type-nav:             1rem;     /* links de navegación */
+  --type-breadcrumb:      1rem;     /* breadcrumb y back-to-home */
+  --type-footer:          1rem;     /* texto de pie de página */
 }
 
 .site-nav {
@@ -121,13 +163,13 @@
 }
 
 .site-nav__brand-name {
-  font-size: 1rem;
+  font-size: var(--type-nav);
   font-weight: 700;
   letter-spacing: 0.01em;
 }
 
 .site-nav__brand-sub {
-  font-size: 1rem;
+  font-size: var(--type-nav);
   color: var(--nav-text-sub);
   font-weight: 400;
 }
@@ -146,7 +188,7 @@
   border-radius: var(--nav-radius);
   text-decoration: none;
   color: var(--nav-text);
-  font-size: 1rem;
+  font-size: var(--type-nav);
   font-weight: 500;
   white-space: nowrap;
   transition: background 0.18s ease, color 0.18s ease;
@@ -181,7 +223,7 @@
   cursor: pointer;
   flex-shrink: 0;
   transition: background 0.18s ease, border-color 0.18s ease;
-  font-size: 1rem;
+  font-size: var(--type-nav);
 }
 
 .site-nav__toggle:hover {
@@ -207,7 +249,7 @@
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 1rem;
+  font-size: var(--type-breadcrumb);
   color: rgba(18, 18, 18, 0.55);
   flex-wrap: wrap;
 }
@@ -230,7 +272,7 @@
 
 .site-breadcrumb__sep {
   opacity: 0.45;
-  font-size: 1rem;
+  font-size: var(--type-breadcrumb);
 }
 
 .site-breadcrumb__current {
@@ -268,7 +310,7 @@
   .site-nav__link {
     padding: 0.8rem 0.75rem;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: var(--type-nav);
     border-bottom: 1px solid var(--nav-border);
   }
 
@@ -303,7 +345,7 @@
   text-decoration: none;
   font-family: 'Lexend', system-ui, sans-serif;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: var(--type-button);
   line-height: 1;
   box-shadow: 0 3px 14px rgba(13,9,230,0.28);
   border: 2px solid transparent;
@@ -325,7 +367,7 @@
   .back-to-home {
     top: calc(var(--nav-height, 62px) + 0.65rem);
     left: 1rem;
-    font-size: 1rem;
+    font-size: var(--type-button);
     padding: 0.55rem 0.9rem;
   }
 }

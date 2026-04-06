@@ -11,7 +11,7 @@
   gap: 0.35rem;
   border-radius: 999px;
   padding: 0.36rem 0.68rem;
-  font-size: 1rem;
+  font-size: var(--type-tag);
   font-weight: 700;
   white-space: nowrap;
 }
@@ -74,7 +74,7 @@
 
 .video-card__tag {
   display: inline-block;
-  font-size: 1rem;
+  font-size: var(--type-tag);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -96,14 +96,14 @@
 }
 
 .video-card__title {
-  font-size: 1.15rem;
+  font-size: var(--type-component-title);
   font-weight: 700;
   line-height: 1.2;
   color: #111;
 }
 
 .video-card__desc {
-  font-size: 1rem;
+  font-size: var(--type-body);
   line-height: 1.6;
   color: rgba(18, 18, 18, 0.68);
 }
@@ -129,14 +129,14 @@
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 1rem;
+  font-size: var(--type-meta);
   color: rgba(18, 18, 18, 0.55);
 }
 
 .video-card__meta-item i {
   color: var(--c360-indigo);
   opacity: 0.75;
-  font-size: 1rem;
+  font-size: var(--type-body);
 }
 
 /* Video placeholder ajustado para las cards */
@@ -184,12 +184,12 @@
   background: rgba(76, 78, 133, 0.08);
   border: 1px solid rgba(76, 78, 133, 0.14);
   color: var(--c360-indigo);
-  font-size: 1.05rem;
+  font-size: var(--type-h3);
   flex-shrink: 0;
 }
 
 .partes-accesibles__eyebrow {
-  font-size: 1rem;
+  font-size: var(--type-section-label);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.09em;
@@ -198,7 +198,7 @@
 }
 
 .partes-accesibles__title {
-  font-size: 1.1rem;
+  font-size: var(--type-h3);
   font-weight: 700;
   line-height: 1.2;
   color: #111;
@@ -206,7 +206,7 @@
 }
 
 .partes-accesibles__desc {
-  font-size: 1rem;
+  font-size: var(--type-body);
   line-height: 1.6;
   color: rgba(18, 18, 18, 0.66);
 }
@@ -247,12 +247,12 @@
 .parte-item__marker {
   color: var(--c360-indigo);
   opacity: 0.55;
-  font-size: 1rem;
+  font-size: var(--type-body);
   margin-top: 0.35rem;
 }
 
 .parte-item__nombre {
-  font-size: 1rem;
+  font-size: var(--type-body);
   font-weight: 700;
   line-height: 1.2;
   color: #111;
@@ -260,7 +260,7 @@
 }
 
 .parte-item__desc {
-  font-size: 1rem;
+  font-size: var(--type-body);
   line-height: 1.6;
   color: rgba(18, 18, 18, 0.68);
 }
@@ -278,7 +278,7 @@
   border: 1px solid rgba(76, 78, 133, 0.18);
   background: rgba(76, 78, 133, 0.06);
   color: var(--c360-indigo);
-  font-size: 1rem;
+  font-size: var(--type-button);
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;

@@ -59,7 +59,7 @@ body {
   min-height: 44px;
   border-radius: 999px;
   font-family: 'Lexend', system-ui, sans-serif;
-  font-size: 1rem;
+  font-size: var(--type-button);
   font-weight: 600;
   text-decoration: none;
   border: 1px solid transparent;
@@ -149,7 +149,7 @@ body {
   gap: 0.35rem;
   border-radius: 999px;
   padding: 0.40rem 0.68rem;
-  font-size: 1rem;
+  font-size: var(--type-tag);
   font-weight: 700;
   background: rgba(255,255,255,0.92);
   border: 1px solid rgba(18,18,18,0.10);
@@ -166,7 +166,7 @@ body {
 }
 
 .ficha-eyebrow {
-  font-size: 1.125rem;
+  font-size: var(--type-hero-label);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.09em;
@@ -180,7 +180,7 @@ body {
 }
 
 .ficha-tag {
-  font-size: 1rem;
+  font-size: var(--type-tag);
   font-weight: 600;
   padding: 0.34rem 0.68rem;
   border-radius: 999px;
@@ -190,7 +190,7 @@ body {
 }
 
 .ficha-title {
-  font-size: 2.25rem;
+  font-size: var(--type-hero-title);
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -0.03em;
@@ -198,13 +198,13 @@ body {
 }
 
 .ficha-director {
-  font-size: 1rem;
+  font-size: var(--type-meta);
   color: var(--muted);
   font-weight: 500;
 }
 
 .ficha-lead {
-  font-size: 1.125rem;
+  font-size: var(--type-hero-desc);
   line-height: 1.72;
   color: rgba(18,18,18,0.72);
   max-width: 60ch;
@@ -232,7 +232,7 @@ body {
 }
 
 .ficha-section__label {
-  font-size: 1rem;
+  font-size: var(--type-section-label);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -241,7 +241,7 @@ body {
 }
 
 .ficha-h2 {
-  font-size: 1.85rem;
+  font-size: var(--type-section-title);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -250,7 +250,7 @@ body {
 }
 
 .ficha-h3 {
-  font-size: 1.1rem;
+  font-size: var(--type-h3);
   font-weight: 700;
   line-height: 1.2;
   color: var(--ink);
@@ -258,7 +258,7 @@ body {
 }
 
 .ficha-section__desc {
-  font-size: 1.125rem;
+  font-size: var(--type-section-desc);
   color: var(--muted);
   line-height: 1.65;
   max-width: 68ch;
@@ -282,7 +282,7 @@ body {
 }
 
 .ficha-dato__label {
-  font-size: 1rem;
+  font-size: var(--type-label);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -290,7 +290,7 @@ body {
 }
 
 .ficha-dato__val {
-  font-size: 1rem;
+  font-size: var(--type-body);
   line-height: 1.3;
   color: var(--ink);
   font-weight: 600;
@@ -303,7 +303,7 @@ body {
   gap: 0.4rem;
 }
 
-.ficha-dato__val--ok i { color: #4d6200; font-size: 1rem; }
+.ficha-dato__val--ok i { color: #4d6200; font-size: var(--type-body); }
 
 /* ====== CONTENT GRID (texto) ====== */
 .ficha-content-grid {
@@ -321,7 +321,7 @@ body {
 }
 
 .ficha-text-block p {
-  font-size: 1rem;
+  font-size: var(--type-body);
   line-height: 1.72;
   color: rgba(18,18,18,0.78);
   margin-top: 0.65rem;
@@ -362,18 +362,18 @@ body {
   background: rgba(13,9,230,0.07);
   border: 1px solid rgba(13,9,230,0.14);
   color: var(--c360-indigo);
-  font-size: 1.75rem;
+  font-size: var(--type-component-icon);
 }
 
 .ficha-dim__title {
-  font-size: 1.15rem;
+  font-size: var(--type-component-title);
   font-weight: 700;
   color: var(--ink);
   line-height: 1.2;
 }
 
 .ficha-dim__desc {
-  font-size: 1.08rem;
+  font-size: var(--type-component-desc);
   line-height: 1.6;
   color: var(--muted);
 }
@@ -403,7 +403,7 @@ body {
   border-radius: 10px;
   display: grid;
   place-items: center;
-  font-size: 1rem;
+  font-size: var(--type-body);
   flex-shrink: 0;
 }
 
@@ -425,7 +425,7 @@ body {
 }
 
 .ficha-recurso__content h3 {
-  font-size: 1rem;
+  font-size: var(--type-body);
   font-weight: 700;
   line-height: 1.2;
   color: var(--ink);
@@ -433,14 +433,14 @@ body {
 }
 
 .ficha-recurso__content p {
-  font-size: 1rem;
+  font-size: var(--type-support);
   color: var(--muted);
   line-height: 1.5;
 }
 
 .ficha-recurso__status {
   flex-shrink: 0;
-  font-size: 1rem;
+  font-size: var(--type-status);
   margin-top: 0.1rem;
 }
 
@@ -458,7 +458,7 @@ body {
   padding: 1.3rem 1.25rem 1.6rem;
   text-align: center;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: var(--type-footer);
   font-family: 'Lexend', system-ui, sans-serif;
 }
 
