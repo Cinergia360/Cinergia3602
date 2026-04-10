@@ -392,56 +392,56 @@
 
 /* =========================================================
    NAVEGACIÓN ENTRE PÁGINAS — flechas prev / next (fixed)
+
+   Tres zonas según el viewport:
+   ① ≥ 1230px  → botones en el gutter real, fuera del contenedor 1120px
+   ② 900–1229px → botones en los bordes del viewport, solo icono,
+                   centrados verticalmente (sin tapar texto principal)
+   ③ < 900px   → botones en las esquinas inferiores del viewport
 ========================================================= */
+
+/* — BASE (aplica a todas las zonas) — */
 .page-nav {
   position: fixed;
-  top: 50%;
   left: 0;
   right: 0;
-  transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
-  pointer-events: none;   /* el contenedor no bloquea el contenido */
+  pointer-events: none;
   z-index: 90;
   font-family: 'Lexend', system-ui, sans-serif;
 }
 
-.page-nav--only-next {
-  justify-content: flex-end;
-}
+.page-nav--only-next { justify-content: flex-end; }
+.page-nav--only-prev { justify-content: flex-start; }
 
-.page-nav--only-prev {
-  justify-content: flex-start;
-}
-
+/* — BOTÓN BASE — */
 .page-nav__btn {
-  pointer-events: auto;   /* los botones sí son clicables */
+  pointer-events: auto;
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
-  padding: 0.75rem 1.1rem;
+  gap: 0.5rem;
   min-height: 44px;
   border-radius: 999px;
   text-decoration: none;
-  font-size: 0.92rem;
   font-weight: 600;
   color: #0D09E6;
-  background: rgba(245,243,239,0.90);
+  background: rgba(245,243,239,0.94);
   border: 1px solid rgba(13,9,230,0.18);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 4px 16px rgba(13,9,230,0.10);
-  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 18px rgba(13,9,230,0.11);
+  transition: background 0.2s ease, transform 0.2s ease,
+              box-shadow 0.2s ease, border-color 0.2s ease;
   white-space: nowrap;
 }
 
 .page-nav__btn:hover {
-  background: rgba(245,243,239,1);
+  background: #f5f3ef;
   border-color: rgba(13,9,230,0.32);
-  transform: scale(1.04);
-  box-shadow: 0 8px 24px rgba(13,9,230,0.16);
+  transform: scale(1.06);
+  box-shadow: 0 8px 26px rgba(13,9,230,0.18);
 }
 
 .page-nav__btn:focus-visible {
@@ -456,30 +456,97 @@
 }
 
 .page-nav__hint {
-  font-size: 0.72rem;
+  font-size: 0.70rem;
   font-weight: 400;
-  opacity: 0.60;
+  opacity: 0.58;
   text-transform: uppercase;
   letter-spacing: 0.07em;
 }
 
 .page-nav__name {
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 700;
 }
 
-@media (max-width: 780px) {
+/* ─────────────────────────────────────────────────────────────
+   ① ZONA ANCHA (≥ 1230px)
+   Gutter real ≥ 55px/lado → botones viven FUERA del área de contenido.
+   padding = (viewport − 1120px) / 2  −  tamaño-botón(~130px)  −  8px gap
+   Resultado: borde derecho del botón queda justo antes del borde
+   izquierdo del contenedor 1120px.
+───────────────────────────────────────────────────────────────── */
+@media (min-width: 1230px) {
   .page-nav {
-    padding: 0 0.6rem;
-  }
-
-  /* En móvil: solo icono, sin etiqueta */
-  .page-nav__label {
-    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 max(1rem, calc((100vw - 1120px) / 2 - 138px));
   }
 
   .page-nav__btn {
-    padding: 0.75rem;
+    padding: 0.75rem 1.1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   ② ZONA INTERMEDIA (900px – 1229px)
+   No hay gutter suficiente → botón solo-icono pegado al borde
+   del viewport. Centrado vertical pero con opacidad reducida
+   en reposo para no distraer del contenido.
+───────────────────────────────────────────────────────────────── */
+@media (min-width: 900px) and (max-width: 1229px) {
+  .page-nav {
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 0.5rem;
+  }
+
+  /* Solo icono: sin etiqueta */
+  .page-nav__label { display: none; }
+
+  .page-nav__btn {
+    padding: 0.75rem 0.8rem;
+    font-size: 1rem;
     gap: 0;
+    opacity: 0.72;
+  }
+
+  .page-nav__btn:hover {
+    opacity: 1;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   ③ ZONA ESTRECHA (< 900px)
+   El contenido ocupa todo el ancho → los botones bajan a las
+   esquinas inferiores del viewport, donde no tapan el texto
+   principal ni los CTAs del hero.
+───────────────────────────────────────────────────────────────── */
+@media (max-width: 899px) {
+  .page-nav {
+    top: auto;
+    transform: none;
+    bottom: 1.25rem;
+    padding: 0 0.9rem;
+  }
+
+  .page-nav__label { display: none; }
+
+  .page-nav__btn {
+    padding: 0.7rem 0.85rem;
+    font-size: 1rem;
+    gap: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-nav {
+    bottom: 1rem;
+    padding: 0 0.65rem;
+  }
+
+  .page-nav__btn {
+    padding: 0.65rem 0.75rem;
+    min-height: 40px;
   }
 }
