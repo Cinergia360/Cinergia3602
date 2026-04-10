@@ -815,18 +815,16 @@ body {
 }
 
 .image-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f5f3ef;
-  padding: 0.35rem;
+  padding: 0;
+  overflow: hidden;
 }
 
 .image-card img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
 }
 
 .preparate-grid.same-size-grid > .panel-card.equal-card {
@@ -846,9 +844,9 @@ body {
 
   .preparate-grid.same-size-grid.two-cols > .image-card img {
     width: 100%;
-    height: auto;
-    max-height: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .preparate-grid.same-size-grid.two-cols > .panel-card.equal-card {
