@@ -391,16 +391,20 @@
 }
 
 /* =========================================================
-   NAVEGACIÓN ENTRE PÁGINAS — flechas prev / next
+   NAVEGACIÓN ENTRE PÁGINAS — flechas prev / next (fixed)
 ========================================================= */
 .page-nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 1.5rem 1.25rem 2.5rem;
+  padding: 0 1rem;
+  pointer-events: none;   /* el contenedor no bloquea el contenido */
+  z-index: 90;
   font-family: 'Lexend', system-ui, sans-serif;
 }
 
@@ -413,27 +417,31 @@
 }
 
 .page-nav__btn {
+  pointer-events: auto;   /* los botones sí son clicables */
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  padding: 0.75rem 1.2rem;
+  padding: 0.75rem 1.1rem;
   min-height: 44px;
   border-radius: 999px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: #0D09E6;
-  background: rgba(13,9,230,0.06);
-  border: 1px solid rgba(13,9,230,0.14);
+  background: rgba(245,243,239,0.90);
+  border: 1px solid rgba(13,9,230,0.18);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 16px rgba(13,9,230,0.10);
   transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   white-space: nowrap;
 }
 
 .page-nav__btn:hover {
-  background: rgba(13,9,230,0.12);
-  border-color: rgba(13,9,230,0.28);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(13,9,230,0.12);
+  background: rgba(245,243,239,1);
+  border-color: rgba(13,9,230,0.32);
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(13,9,230,0.16);
 }
 
 .page-nav__btn:focus-visible {
@@ -448,24 +456,30 @@
 }
 
 .page-nav__hint {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 400;
-  opacity: 0.65;
+  opacity: 0.60;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
 }
 
 .page-nav__name {
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 700;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 780px) {
   .page-nav {
-    padding: 1.2rem 1rem 2rem;
+    padding: 0 0.6rem;
   }
 
-  .page-nav__hint {
+  /* En móvil: solo icono, sin etiqueta */
+  .page-nav__label {
     display: none;
+  }
+
+  .page-nav__btn {
+    padding: 0.75rem;
+    gap: 0;
   }
 }
