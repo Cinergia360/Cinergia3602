@@ -212,6 +212,12 @@ body {
   margin-bottom: 1rem;
 }
 
+.hero-content h1 img {
+  display: block;
+  max-height: 80px;
+  width: auto;
+}
+
 .hero-subtitle {
   font-size: var(--type-hero-desc);
   line-height: 1.75;
