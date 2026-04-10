@@ -10,34 +10,35 @@
    (nav.css se carga primero en todos los HTML del sitio)
 ========================================================= */
 :root {
-  /* Paleta Cinergia 360 */
-  --c360-indigo: #0D09E6;
-  --c360-orange: #DE2173;
-  --c360-lime:   #CEF03A;
-  --c360-cream:  #f8f6e4;
-  --c360-peach:  #eeb3a8;
-  --c360-lilac:  #a895cb;
+  /* Paleta Cinergia 360 — 8 colores de marca, fuente única de verdad */
+  --c360-indigo:   #0D09E6;  /* Acción principal, brand */
+  --c360-pink:     #DE2173;  /* Acento secundario, podcast */
+  --c360-lime:     #CEF03A;  /* Foco accesible, disponibilidad */
+  --c360-surface:  #f5f3ef;  /* Fondo de página */
+  --c360-dark:     #1e1b1a;  /* Texto principal, superficie oscura */
+  --c360-lavender: #d7dcee;  /* Superficie secundaria, muted */
+  --c360-lime-pale:#f0f3d9;  /* Superficie OK/disponible */
+  --c360-blush:    #f2dae0;  /* Superficie emocional */
 
   /* Roles semánticos — usar en todo el sitio */
-  --color-primary:      #0D09E6;          /* CTAs principales, brand */
-  --color-primary-dark: #0a07c2;          /* Hover de CTAs primarias */
-  --color-accent:       #DE2173;          /* Acento secundario, podcast */
+  --color-primary:      #0D09E6;          /* CTAs principales, brand, nav activa */
+  --color-accent:       #DE2173;          /* Acento secundario, podcast, sensorial */
   --color-focus:        #CEF03A;          /* Anillo de foco accesible */
   --color-focus-dark:   #0D09E6;          /* Foco sobre fondo claro */
 
   /* Superficie */
-  --color-surface:      #f5f4f1;
-  --color-paper:        #ffffff;
-  --color-cream:        #f8f6e4;
+  --color-surface:      #f5f3ef;          /* Fondo de página */
+  --color-paper:        #ffffff;          /* Fondo de tarjetas y paneles */
+  --color-surface-muted:#d7dcee;          /* Superficie secundaria, muted bg */
 
   /* Texto */
-  --color-ink:          #121212;
-  --color-muted:        rgba(18,18,18,0.65);
-  --color-subtle:       rgba(18,18,18,0.45);
+  --color-ink:          #1e1b1a;
+  --color-muted:        rgba(30,27,26,0.65);
+  --color-subtle:       rgba(30,27,26,0.45);
 
   /* Bordes */
-  --color-line:         rgba(18,18,18,0.10);
-  --color-line-mid:     rgba(18,18,18,0.16);
+  --color-line:         rgba(30,27,26,0.10);
+  --color-line-mid:     rgba(30,27,26,0.16);
 
   /* Tags / etiquetas */
   --color-tag-bg:       rgba(13,9,230,0.06);
@@ -45,14 +46,14 @@
   --color-tag-text:     #0D09E6;
 
   /* Badges de estado */
-  --color-ok-bg:        rgba(206,240,58,0.18);
+  --color-ok-bg:        rgba(206,240,58,0.18);  /* lime tint */
   --color-ok-border:    rgba(206,240,58,0.42);
-  --color-ok-text:      #344300;
-  --color-ok-icon:      #4d6200;
-  --color-soon-bg:      rgba(18,18,18,0.05);
-  --color-soon-border:  rgba(18,18,18,0.10);
-  --color-soon-text:    rgba(18,18,18,0.58);
-  --color-soon-icon:    rgba(18,18,18,0.42);
+  --color-ok-text:      #1e1b1a;
+  --color-ok-icon:      #1e1b1a;
+  --color-soon-bg:      rgba(30,27,26,0.05);
+  --color-soon-border:  rgba(30,27,26,0.10);
+  --color-soon-text:    rgba(30,27,26,0.58);
+  --color-soon-icon:    rgba(30,27,26,0.42);
 
   /* ─────────────────────────────────────────────────────────
      TIPOGRAFÍA — TOKENS GLOBALES
@@ -99,10 +100,10 @@
 
 .site-nav {
   /* Tokens locales — modo claro (páginas internas) */
-  --nav-bg: rgba(245, 244, 241, 0.92);
-  --nav-text: #121212;
-  --nav-text-sub: rgba(18, 18, 18, 0.55);
-  --nav-border: rgba(18, 18, 18, 0.10);
+  --nav-bg: rgba(245,243,239,0.92);
+  --nav-text: #1e1b1a;
+  --nav-text-sub: rgba(30,27,26,0.55);
+  --nav-border: rgba(30,27,26,0.10);
   --nav-hover-bg: rgba(13,9,230,0.06);
   --nav-active-color: #0D09E6;
   --nav-height: 62px;
@@ -126,7 +127,7 @@
   --nav-text-sub: rgba(255, 255, 255, 0.55);
   --nav-border: rgba(255, 255, 255, 0.10);
   --nav-hover-bg: rgba(255, 255, 255, 0.08);
-  --nav-active-color: #f8f6e4;
+  --nav-active-color: #CEF03A;
 }
 
 .site-nav__inner {
@@ -238,7 +239,7 @@
 /* ====== BREADCRUMB (subpáginas) ====== */
 .site-breadcrumb {
   background: transparent;
-  border-bottom: 1px solid rgba(18, 18, 18, 0.07);
+  border-bottom: 1px solid rgba(30,27,26,0.07);
   font-family: 'Lexend', system-ui, sans-serif;
 }
 
@@ -250,7 +251,7 @@
   align-items: center;
   gap: 0.4rem;
   font-size: var(--type-breadcrumb);
-  color: rgba(18, 18, 18, 0.55);
+  color: rgba(30,27,26,0.55);
   flex-wrap: wrap;
 }
 
@@ -261,7 +262,7 @@
 }
 
 .site-breadcrumb__link {
-  color: rgba(18, 18, 18, 0.55);
+  color: rgba(30,27,26,0.55);
   text-decoration: none;
   transition: color 0.15s ease;
 }
@@ -276,7 +277,7 @@
 }
 
 .site-breadcrumb__current {
-  color: #121212;
+  color: #1e1b1a;
   font-weight: 600;
 }
 
@@ -353,7 +354,7 @@
 }
 
 .back-to-home:hover {
-  background: var(--color-primary-dark, #0a07c2);
+  background: #0D09E6;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(13,9,230,0.32);
 }
