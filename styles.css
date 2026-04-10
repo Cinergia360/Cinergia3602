@@ -214,8 +214,9 @@ body {
 
 .hero-content h1 img {
   display: block;
-  max-height: 80px;
+  max-height: 120px;
   width: auto;
+  margin: 0 auto;
 }
 
 .hero-subtitle {
