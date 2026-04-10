@@ -175,6 +175,12 @@
   font-weight: 400;
 }
 
+.site-nav__brand-logo {
+  display: block;
+  height: 32px;
+  width: auto;
+}
+
 /* ====== LINKS ====== */
 .site-nav__links {
   display: flex;
