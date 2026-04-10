@@ -4,7 +4,7 @@
   --bg-page: #000000;
   --bg-section: #ffffff;
   --bg-section-soft: #f5f3ef;
-  --bg-section-alt: #d7dcee;
+  --bg-section-alt: #f5f3ef;
 
   --text-main: #1e1b1a;
   --text-body: #1e1b1a;
@@ -540,13 +540,13 @@ body {
   align-items: start;
 }
 
-/* Manifiesto (protagonista) */
+/* Manifiesto (protagonista) — tarjeta vibrante indigo */
 .concepto-manifiesto {
-  background: #ffffff;
-  border: 1px solid var(--border-soft);
+  background: #0D09E6;
+  border: 1px solid #0D09E6;
   border-radius: var(--radius-lg);
   padding: 1.15rem;
-  box-shadow: var(--shadow-soft);
+  box-shadow: 0 12px 36px rgba(13,9,230,0.30);
 }
 
 .manifiesto-badge {
@@ -555,25 +555,25 @@ body {
   border-radius: 999px;
   display: grid;
   place-items: center;
-  background: var(--c360-indigo);
-  color: #fff;
+  background: #fff;
+  color: #0D09E6;
   font-weight: 800;
   font-size: var(--type-manifesto);
   margin-bottom: 0.9rem;
-  box-shadow: 0 8px 20px rgba(13,9,230,0.25);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
 }
 
 .concepto-manifiesto h3 {
   font-size: var(--type-manifesto);
   line-height: 1.15;
   margin-bottom: 0.6rem;
-  color: var(--text-main);
+  color: #fff;
 }
 
 .manifiesto-lead {
   font-size: var(--type-body);
   line-height: 1.68;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.88);
   margin-bottom: 0.9rem;
 }
 
@@ -582,8 +582,8 @@ body {
   grid-template-columns: 10px 1fr;
   gap: 0.6rem;
   align-items: start;
-  background: #f0f3d9;
-  border: 1px solid rgba(13,9,230,0.08);
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.20);
   border-radius: 12px;
   padding: 0.75rem;
 }
@@ -592,14 +592,14 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  background: var(--c360-orange);
+  background: #CEF03A;
   margin-top: 0.25rem;
 }
 
 .manifiesto-note p {
   font-size: var(--type-body);
   line-height: 1.55;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.88);
 }
 
 /* Lista jerárquica */
@@ -719,21 +719,25 @@ body {
   max-width: 56ch;
 }
 
-/* Colores por dimensión — solo paleta de marca */
+/* Colores por dimensión — solo blanco, negro y vibrantes de marca */
 .dim-espacial .dimension-marker,
-.dim-espacial .dimension-icon { background: #0D09E6; color: #fff; }
+.dim-espacial .dimension-icon   { background: #0D09E6; color: #fff; }
 
 .dim-sensorial .dimension-marker,
-.dim-sensorial .dimension-icon { background: #DE2173; color: #fff; }
+.dim-sensorial .dimension-icon  { background: #DE2173; color: #fff; }
 
 .dim-cognitiva .dimension-marker,
-.dim-cognitiva .dimension-icon { background: #d7dcee; color: #1e1b1a; }
+.dim-cognitiva .dimension-icon  { background: #CEF03A; color: #1e1b1a; }
 
 .dim-emocional .dimension-marker,
-.dim-emocional .dimension-icon { background: #f2dae0; color: #1e1b1a; }
+.dim-emocional .dimension-icon  { background: #1e1b1a; color: #fff; }
 
 .dim-informativa .dimension-marker,
-.dim-informativa .dimension-icon { background: #f0f3d9; color: #1e1b1a; }
+.dim-informativa .dimension-icon {
+  background: #fff;
+  color: #0D09E6;
+  border: 1.5px solid rgba(13,9,230,0.22);
+}
 
 /* ================= PANELES (base para tarjetas de info) ================= */
 .panel-card {
@@ -814,7 +818,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #d7dcee;
+  background: #f5f3ef;
   padding: 0.35rem;
 }
 

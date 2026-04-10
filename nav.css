@@ -391,6 +391,84 @@
 }
 
 /* =========================================================
+   CARDS VIBRANTES — fondo sólido con texto calado
+   Regla: base del sitio = blanco + negro Cinergia.
+   El color de marca (indigo / pink / lime) solo aparece como
+   fondo sólido en tarjetas seleccionadas, con texto en blanco.
+   Especificidad doble (.comp-card.comp-card--X) para superar
+   los fondos y colores definidos en cada CSS de página.
+========================================================= */
+
+/* — Indigo — */
+.comp-card.comp-card--indigo {
+  background: #0D09E6;
+  border-color: #0D09E6;
+  box-shadow: 0 10px 32px rgba(13,9,230,0.28);
+}
+.comp-card.comp-card--indigo,
+.comp-card.comp-card--indigo .comp-card__title,
+.comp-card.comp-card--indigo .comp-card__desc,
+.comp-card.comp-card--indigo .comp-card__tag { color: #fff; }
+.comp-card.comp-card--indigo .comp-card__icon {
+  background: rgba(255,255,255,0.16);
+  border-color: rgba(255,255,255,0.24);
+  color: #fff;
+}
+.comp-card.comp-card--indigo .comp-card__status {
+  background: rgba(255,255,255,0.16);
+  border-color: rgba(255,255,255,0.26);
+  color: #fff;
+}
+.comp-card.comp-card--indigo .comp-card__status i { color: #fff; }
+.comp-card.comp-card--indigo:hover { border-color: rgba(255,255,255,0.30); }
+
+/* — Pink — */
+.comp-card.comp-card--pink {
+  background: #DE2173;
+  border-color: #DE2173;
+  box-shadow: 0 10px 32px rgba(222,33,115,0.28);
+}
+.comp-card.comp-card--pink,
+.comp-card.comp-card--pink .comp-card__title,
+.comp-card.comp-card--pink .comp-card__desc,
+.comp-card.comp-card--pink .comp-card__tag { color: #fff; }
+.comp-card.comp-card--pink .comp-card__icon {
+  background: rgba(255,255,255,0.16);
+  border-color: rgba(255,255,255,0.24);
+  color: #fff;
+}
+.comp-card.comp-card--pink .comp-card__status {
+  background: rgba(255,255,255,0.16);
+  border-color: rgba(255,255,255,0.26);
+  color: #fff;
+}
+.comp-card.comp-card--pink .comp-card__status i { color: #fff; }
+.comp-card.comp-card--pink:hover { border-color: rgba(255,255,255,0.30); }
+
+/* — Lime — */
+.comp-card.comp-card--lime {
+  background: #CEF03A;
+  border-color: #CEF03A;
+  box-shadow: 0 10px 32px rgba(206,240,58,0.36);
+}
+.comp-card.comp-card--lime,
+.comp-card.comp-card--lime .comp-card__title,
+.comp-card.comp-card--lime .comp-card__desc,
+.comp-card.comp-card--lime .comp-card__tag { color: #1e1b1a; }
+.comp-card.comp-card--lime .comp-card__icon {
+  background: rgba(30,27,26,0.10);
+  border-color: rgba(30,27,26,0.18);
+  color: #1e1b1a;
+}
+.comp-card.comp-card--lime .comp-card__status {
+  background: rgba(30,27,26,0.10);
+  border-color: rgba(30,27,26,0.18);
+  color: #1e1b1a;
+}
+.comp-card.comp-card--lime .comp-card__status i { color: #1e1b1a; }
+.comp-card.comp-card--lime:hover { border-color: rgba(30,27,26,0.30); }
+
+/* =========================================================
    BANDA DE IMAGEN EDITORIAL
    Bloque visual entre secciones. Respeta el max-width del
    contenido y tiene border-radius para integrarse al layout.
