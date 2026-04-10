@@ -391,6 +391,91 @@
 }
 
 /* =========================================================
+   BANDA DE IMAGEN EDITORIAL
+   Bloque visual entre secciones. Respeta el max-width del
+   contenido y tiene border-radius para integrarse al layout.
+   Uso: <div class="comp-img-band" aria-hidden="true">
+          <div class="comp-img-band__inner"><img …></div>
+        </div>
+========================================================= */
+.comp-img-band {
+  max-width: 1120px;
+  margin: 0 auto 2.5rem;
+  padding: 0 1.25rem;
+}
+
+.comp-img-band__inner {
+  border-radius: 18px;
+  overflow: hidden;
+  height: 340px;
+  background: var(--c360-dark);
+}
+
+.comp-img-band__inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 780px) {
+  .comp-img-band__inner {
+    height: 220px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  .comp-img-band {
+    padding: 0 1rem;
+  }
+  .comp-img-band__inner {
+    height: 170px;
+    border-radius: 10px;
+  }
+}
+
+/* =========================================================
+   CARD CON CUBIERTA DE IMAGEN SUPERIOR
+   Variante de .comp-card que muestra una foto en la parte
+   alta antes del contenido. Usa especificidad doble para
+   superar el padding que define cada página en .comp-card.
+   Uso: <article class="comp-card comp-card--media">
+          <div class="comp-card__cover"><img …></div>
+          <div class="comp-card__body">…contenido…</div>
+        </article>
+========================================================= */
+.comp-card.comp-card--media {
+  padding: 0;
+  overflow: hidden;
+}
+
+.comp-card__cover {
+  height: 190px;
+  overflow: hidden;
+  background: var(--c360-dark);
+  flex-shrink: 0;
+}
+
+.comp-card__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.comp-card.comp-card--media:hover .comp-card__cover img {
+  transform: scale(1.04);
+}
+
+.comp-card__body {
+  padding: 1.1rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+/* =========================================================
    NAVEGACIÓN ENTRE PÁGINAS — flechas prev / next (fixed)
 
    Tres zonas según el viewport:
