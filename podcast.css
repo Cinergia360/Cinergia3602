@@ -7,21 +7,18 @@
 /* ====== TOKENS ====== */
 :root {
   --c360-indigo: #0D09E6;
-  --c360-cream:  #f8f6e4;
   --c360-orange: #DE2173;
   --c360-lime:   #CEF03A;
-  --c360-peach:  #eeb3a8;
-  --c360-lilac:  #a895cb;
 
   --comp-accent:        #DE2173;
   --comp-accent-soft:   rgba(222,33,115,0.08);
   --comp-accent-border: rgba(222,33,115,0.20);
 
-  --bg:    #f5f4f1;
+  --bg:    #f5f3ef;
   --paper: #ffffff;
-  --ink:   #121212;
-  --muted: rgba(18,18,18,0.65);
-  --line:  rgba(18,18,18,0.10);
+  --ink:   #1e1b1a;
+  --muted: rgba(30,27,26,0.65);
+  --line:  rgba(30,27,26,0.10);
 
   --shadow-soft: 0 12px 30px rgba(0,0,0,0.06);
   --shadow-card: 0 18px 50px rgba(0,0,0,0.10);
@@ -120,7 +117,7 @@ body {
   color: #fff;
 }
 
-.comp-btn--primary:hover { background: #b81a62; transform: translateY(-2px); }
+.comp-btn--primary:hover { background: #DE2173; transform: translateY(-2px); }
 
 .comp-btn--ghost {
   background: rgba(255,255,255,0.75);
@@ -238,19 +235,19 @@ body {
 
 .comp-card__status--ok {
   background: rgba(206,240,58,0.18);
-  color: #344300;
+  color: #1e1b1a;
   border-color: rgba(206,240,58,0.42);
 }
 
-.comp-card__status--ok i { color: #4d6200; }
+.comp-card__status--ok i { color: #1e1b1a; }
 
 .comp-card__status--soon {
-  background: rgba(18,18,18,0.05);
-  color: rgba(18,18,18,0.58);
-  border-color: rgba(18,18,18,0.10);
+  background: rgba(30,27,26,0.05);
+  color: rgba(30,27,26,0.58);
+  border-color: rgba(30,27,26,0.10);
 }
 
-.comp-card__status--soon i { color: rgba(18,18,18,0.42); }
+.comp-card__status--soon i { color: rgba(30,27,26,0.42); }
 
 /* ====== PANEL INFORMATIVO ====== */
 .comp-panel {
@@ -282,7 +279,7 @@ body {
   text-align: center;
   display: grid;
   gap: 0.4rem;
-  color: #444;
+  color: var(--muted);
 }
 
 .comp-embed-placeholder__inner i {
