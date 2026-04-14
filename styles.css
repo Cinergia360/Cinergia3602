@@ -1137,6 +1137,13 @@ body.modal-open {
   outline-offset: 2px;
 }
 
+.contacto-logo img {
+  display: block;
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+}
+
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1000px) {
   .componentes-grid {
