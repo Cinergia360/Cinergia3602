@@ -53,7 +53,6 @@ body {
   padding: 2.5rem 0 2rem;
   display: grid;
   gap: 1.2rem;
-  border-bottom: 1px solid var(--line);
   margin-bottom: 0.5rem;
 }
 
@@ -118,7 +117,7 @@ body {
 .comp-btn--ghost {
   background: rgba(255,255,255,0.75);
   color: var(--ink);
-  border-color: var(--line);
+  border-color: var(--);
 }
 .comp-btn--ghost:hover { background: #fff; transform: translateY(-2px); }
 

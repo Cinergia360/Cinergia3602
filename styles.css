@@ -52,9 +52,10 @@ body {
 }
 
 .section-intro {
-  font-size: var(--type-section-intro);
+  font-size: var(--type-section-intro, 1.125rem);
+  font-weight: 400;
   line-height: 1.75;
-  color: var(--text-body);
+  color: var(--text-body, #1e1b1a);
   max-width: 850px;
   margin-bottom: 2rem;
 }
