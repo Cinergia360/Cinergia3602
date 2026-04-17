@@ -429,7 +429,6 @@ body {
 
 /* ====== FOOTER ====== */
 .repo-footer {
-  border-top: 1px solid var(--line);
   padding: 1.3rem 1.25rem 1.6rem;
   text-align: center;
   color: var(--muted);

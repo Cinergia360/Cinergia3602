@@ -127,8 +127,7 @@ body {
 
 /* ====== SECCIONES ====== */
 .comp-section {
-  padding: 2.2rem 0;
-  border-top: 1px solid var(--line);
+  padding: 2.8rem 0;
 }
 
 .comp-section__head { margin-bottom: 1.3rem; }
@@ -278,7 +277,6 @@ body {
 
 /* ====== FOOTER ====== */
 .comp-footer {
-  border-top: 1px solid var(--line);
   padding: 1.3rem 1.25rem 1.6rem;
   text-align: center;
   color: var(--muted);
