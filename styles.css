@@ -1405,12 +1405,13 @@ body.modal-open {
     padding: 0;
   }
 
+  /* Botones: sobre los dots, no encima del contenido de la card */
   .carousel-btn-side {
     top: auto;
-    bottom: -0.25rem;
+    bottom: 1.6rem;     /* posicionados claramente por encima de los dots */
     transform: none;
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
   }
 
   .carousel-btn-side:hover {
@@ -1425,19 +1426,27 @@ body.modal-open {
     right: calc(50% - 64px);
   }
 
+  /* Dots: inmediatamente debajo de los botones, sin margin excesivo */
   .componentes-controls {
-    margin-top: 1.4rem;
+    margin-top: 0.5rem;
   }
 
+  /* Track: altura suficiente para imagen + contenido + zona de controles */
   .componentes-track {
     height: auto;
-    min-height: 340px;
+    min-height: 420px;  /* imagen(190) + contenido(170) + buffer(60) para controles */
+    overflow: visible;  /* elimina el clip que cortaba el CTA */
   }
 
   .componente-slide {
     position: absolute;
     width: 100%;
     max-width: 100%;
+  }
+
+  /* Más espacio interno para que el CTA respire al fondo de la card */
+  .componente-slide-content {
+    padding-bottom: 1.5rem;
   }
 
   .componente-slide.is-active {
@@ -1490,6 +1499,17 @@ body.modal-open {
   .dimension-item:hover,
   .dimension-item:focus-within {
     transform: translateY(-1px) scale(1.01);
+  }
+}
+
+/* ≤480px — teléfonos pequeños: imagen ligeramente más compacta */
+@media (max-width: 480px) {
+  .componente-slide img {
+    height: 170px;        /* 20px menos que 620px → más espacio para contenido */
+  }
+
+  .componentes-track {
+    min-height: 400px;    /* ajustado: imagen(170) + contenido(170) + buffer(60) */
   }
 }
 
