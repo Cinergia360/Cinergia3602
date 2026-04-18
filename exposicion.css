@@ -271,7 +271,8 @@ body {
 .sentido-item__desc {
   font-size: var(--type-support);
   color: var(--muted);
-  line-height: 1.5;
+  line-height: 1.6;
+  text-wrap: pretty;
 }
 
 /* ====== FOOTER ====== */
