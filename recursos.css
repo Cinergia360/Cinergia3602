@@ -1150,4 +1150,8 @@
     grid-template-columns: 8px 1fr auto;
     padding: .65rem .7rem;
   }
+
+  .audio-cards-grid {
+    grid-template-columns: 1fr;
+  }
 }

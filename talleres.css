@@ -431,4 +431,9 @@ body {
   .comp-main { padding: 1.5rem 1rem 3rem; }
   .comp-hero__actions { align-items: stretch; }
   .comp-btn { width: 100%; justify-content: center; }
+  .comp-cards-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .comp-section { padding: 1.5rem 0; }
 }

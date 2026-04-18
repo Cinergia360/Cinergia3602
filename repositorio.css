@@ -128,6 +128,7 @@ body {
   letter-spacing: -0.03em;
   margin-bottom: 0.8rem;
   overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .repo-hero__lead {
@@ -334,6 +335,7 @@ body {
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin-bottom: .65rem;
+  overflow-wrap: break-word;
 }
 
 .repo-desc {
@@ -522,5 +524,11 @@ body {
   .repo-btn {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .repo-main {
+    padding: 1.5rem 1rem 3rem;
   }
 }

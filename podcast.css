@@ -432,6 +432,11 @@ body {
   .comp-hero__actions { align-items: stretch; }
   .comp-btn { width: 100%; justify-content: center; }
 
+  .comp-cards-grid,
+  .comp-cards-grid--3col {
+    grid-template-columns: 1fr;
+  }
+
   .comp-embed-placeholder {
     min-height: 120px;
   }
@@ -449,5 +454,11 @@ body {
   .plataforma-chip__badge {
     font-size: 0.65rem;
     padding: 0.15rem 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .comp-embed-placeholder {
+    min-height: 100px;
   }
 }

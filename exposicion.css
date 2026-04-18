@@ -301,7 +301,12 @@ body {
 
 @media (max-width: 520px) {
   .comp-main { padding: 1.5rem 1rem 3rem; }
-  .comp-cards-grid, .sentidos-grid { grid-template-columns: 1fr; }
+  .comp-cards-grid { grid-template-columns: 1fr; }
   .comp-hero__actions { align-items: stretch; }
   .comp-btn { width: 100%; justify-content: center; }
+}
+
+@media (max-width: 480px) {
+  .sentidos-grid { grid-template-columns: 1fr; }
+  .comp-section { padding: 1.5rem 0; }
 }

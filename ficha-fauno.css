@@ -505,6 +505,14 @@ body {
   }
 }
 
+@media (max-width: 780px) {
+  .ficha-hero__media img {
+    max-height: 320px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
 @media (max-width: 620px) {
   .ficha-main {
     padding: 1.5rem 1rem 3rem;
@@ -530,5 +538,15 @@ body {
 
   .ficha-title {
     font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .ficha-datos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ficha-section {
+    padding: 1.5rem 0;
   }
 }

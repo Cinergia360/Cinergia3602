@@ -344,3 +344,14 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 520px) {
+  .video-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-single-block {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
