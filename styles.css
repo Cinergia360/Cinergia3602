@@ -57,7 +57,7 @@ body {
   line-height: 1.75;
   color: var(--text-body, #1e1b1a);
   max-width: 850px;
-  margin-bottom: 2rem;
+  margin-bottom: 2.8rem;
 }
 
 .small-help {
@@ -1066,7 +1066,7 @@ body {
 .redes-icons {
   display: flex;
   gap: 1rem;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   flex-wrap: wrap;
 }
 
@@ -1078,6 +1078,10 @@ body {
   transform: translateY(-2px);
   opacity: 1;
   color: #CEF03A;
+}
+
+.redes-icons i {
+  font-size: 1.44rem;
 }
 
 .contacto-footer {
