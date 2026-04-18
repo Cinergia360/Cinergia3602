@@ -1304,7 +1304,9 @@ body.modal-open {
 
   .carousel-btn-side.left { left: 0.15rem; }
   .carousel-btn-side.right { right: 0.15rem; }
+}
 
+@media (max-width: 720px) {
   .concepto-framework {
     grid-template-columns: 1fr;
   }
