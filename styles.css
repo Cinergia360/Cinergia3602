@@ -57,7 +57,7 @@ body {
   line-height: 1.75;
   color: var(--text-body, #1e1b1a);
   max-width: 850px;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2rem;
 }
 
 .small-help {
@@ -537,9 +537,8 @@ body {
 .concepto-framework {
   display: grid;
   grid-template-columns: 0.95fr 1.35fr;
-  gap: 2.5rem;
+  gap: 1rem;
   align-items: start;
-  margin-top: 0.5rem;
 }
 
 /* Manifiesto (protagonista) — tarjeta vibrante indigo */
@@ -1305,12 +1304,9 @@ body.modal-open {
 
   .carousel-btn-side.left { left: 0.15rem; }
   .carousel-btn-side.right { right: 0.15rem; }
-}
 
-@media (max-width: 860px) {
   .concepto-framework {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
   }
 }
 
