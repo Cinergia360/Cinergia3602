@@ -217,7 +217,9 @@ body {
 .hero-content h1 img {
   display: block;
   max-height: 200px;
+  max-width: 100%;
   width: auto;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -1375,6 +1377,10 @@ body.modal-open {
 
   .hero-content {
     padding: 2.5rem 1rem;
+  }
+
+  .hero-content h1 img {
+    max-height: 140px;
   }
 
   .hero-subtitle {

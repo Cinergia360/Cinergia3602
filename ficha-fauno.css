@@ -333,7 +333,7 @@ body {
 /* ====== DIMENSIONES DE MEDIACIÓN ====== */
 .ficha-dimensiones {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1rem;
 }
 
@@ -378,6 +378,7 @@ body {
   font-size: var(--type-component-desc);
   line-height: 1.6;
   color: var(--muted);
+  text-wrap: balance;
 }
 
 /* ====== RECURSOS DISPONIBLES ====== */
@@ -500,7 +501,7 @@ body {
   }
 
   .ficha-dimensiones {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

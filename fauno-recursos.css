@@ -4,6 +4,11 @@
    No duplica tokens ya definidos en repositorio.css
 ========================================================= */
 
+/* ====== VIDEO STACKED (segundo bloque con separación) ====== */
+.video-single-block--stacked {
+  margin-top: 0.9rem;
+}
+
 /* ====== PILLS (faltaban en recursos.css) ====== */
 .res-pill {
   display: inline-flex;
@@ -31,6 +36,12 @@
 }
 
 .res-pill--soon i { color: rgba(30,27,26,0.42); }
+
+.res-pill--spoiler {
+  background: rgba(200,100,0,0.10);
+  color: #a85500;
+  border: 1px solid rgba(200,100,0,0.28);
+}
 
 /* ====================================================================
    VIDEO — 3 CARDS EN GRID

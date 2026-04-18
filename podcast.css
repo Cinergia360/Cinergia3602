@@ -169,6 +169,11 @@ body {
   gap: 1rem;
 }
 
+/* Variante de 3 columnas (sección "¿Qué es el podcast?") */
+.comp-cards-grid--3col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .comp-card {
   background: rgba(255,255,255,0.82);
   border: 1px solid var(--line);
@@ -381,6 +386,13 @@ body {
   }
 }
 
+/* ====== AUDIO NATIVO EMBEBIDO EN TARJETA ====== */
+.comp-audio-native {
+  display: block;
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
 /* ====== FOOTER ====== */
 .comp-footer {
   padding: 1.3rem 1.25rem 1.6rem;
@@ -404,7 +416,8 @@ body {
 }
 
 @media (max-width: 780px) {
-  .comp-cards-grid {
+  .comp-cards-grid,
+  .comp-cards-grid--3col {
     grid-template-columns: 1fr;
   }
 
