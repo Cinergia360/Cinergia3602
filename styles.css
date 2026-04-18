@@ -537,8 +537,9 @@ body {
 .concepto-framework {
   display: grid;
   grid-template-columns: 0.95fr 1.35fr;
-  gap: 1rem;
+  gap: 2.5rem;
   align-items: start;
+  margin-top: 3rem;
 }
 
 /* Manifiesto (protagonista) — tarjeta vibrante indigo */
