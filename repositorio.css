@@ -127,6 +127,7 @@ body {
   line-height: 1.05;
   letter-spacing: -0.03em;
   margin-bottom: 0.8rem;
+  overflow-wrap: break-word;
 }
 
 .repo-hero__lead {

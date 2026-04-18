@@ -211,6 +211,7 @@ body {
   font-size: var(--type-hero-title);
   font-weight: 700;
   margin-bottom: 1rem;
+  overflow-wrap: break-word;
 }
 
 .hero-content h1 img {
@@ -1483,5 +1484,19 @@ body.modal-open {
   .dimension-item:hover,
   .dimension-item:focus-within {
     transform: translateY(-1px) scale(1.01);
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-content {
+    padding: 2rem 0.75rem;
+  }
+
+  .section-content {
+    padding: 0 0.75rem;
+  }
+
+  .section {
+    padding: 3rem 0.75rem;
   }
 }
