@@ -360,11 +360,13 @@
           <aside class="model-catalog" aria-labelledby="catalogo-modelos-title">
             <div class="model-catalog__head">
               <p class="model-catalog__label" id="catalogo-modelos-title">Catálogo de modelos</p>
-              <span class="model-catalog__count">4 modelos</span>
+              <span class="model-catalog__count">5 modelos</span>
             </div>
 
             <div class="model-catalog__list" role="list">
-              <button class="model-catalog-item is-active" type="button" role="listitem" aria-current="true" aria-label="Fauno — Disponible. Actualmente seleccionado.">
+              <button class="model-catalog-item is-active" type="button" role="listitem"
+                      data-model-key="fauno" aria-current="true"
+                      aria-label="Fauno — Disponible. Actualmente seleccionado.">
                 <span class="model-catalog-item__dot is-available" aria-hidden="true"></span>
                 <div class="model-catalog-item__content">
                   <strong>Fauno</strong>
@@ -373,31 +375,48 @@
                 <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
               </button>
 
-              <button class="model-catalog-item is-disabled" type="button" role="listitem" aria-disabled="true" aria-label="Hada — Próximamente, no disponible aún" disabled>
-                <span class="model-catalog-item__dot is-soon" aria-hidden="true"></span>
+              <button class="model-catalog-item" type="button" role="listitem"
+                      data-model-key="ofelia" aria-current="false"
+                      aria-label="Ofelia — Disponible">
+                <span class="model-catalog-item__dot is-available" aria-hidden="true"></span>
                 <div class="model-catalog-item__content">
-                  <strong>Hada</strong>
-                  <span>.glb · Próximamente</span>
+                  <strong>Ofelia</strong>
+                  <span>.glb · Disponible</span>
                 </div>
-                <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
               </button>
 
-              <button class="model-catalog-item is-disabled" type="button" role="listitem" aria-disabled="true" aria-label="Laberinto — Próximamente, no disponible aún" disabled>
-                <span class="model-catalog-item__dot is-soon" aria-hidden="true"></span>
+              <button class="model-catalog-item" type="button" role="listitem"
+                      data-model-key="hombrepálido" aria-current="false"
+                      aria-label="Hombre Pálido — Disponible">
+                <span class="model-catalog-item__dot is-available" aria-hidden="true"></span>
                 <div class="model-catalog-item__content">
-                  <strong>Laberinto</strong>
-                  <span>.glb · Próximamente</span>
+                  <strong>Hombre Pálido</strong>
+                  <span>.glb · Disponible</span>
                 </div>
-                <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
               </button>
 
-              <button class="model-catalog-item is-disabled" type="button" role="listitem" aria-disabled="true" aria-label="Puerta de tiza — Próximamente, no disponible aún" disabled>
-                <span class="model-catalog-item__dot is-soon" aria-hidden="true"></span>
+              <button class="model-catalog-item" type="button" role="listitem"
+                      data-model-key="capitanvidal" aria-current="false"
+                      aria-label="Capitán Vidal — Disponible">
+                <span class="model-catalog-item__dot is-available" aria-hidden="true"></span>
                 <div class="model-catalog-item__content">
-                  <strong>Puerta de tiza</strong>
-                  <span>.glb · Próximamente</span>
+                  <strong>Capitán Vidal</strong>
+                  <span>.glb · Disponible</span>
                 </div>
-                <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              </button>
+
+              <button class="model-catalog-item" type="button" role="listitem"
+                      data-model-key="mandragora" aria-current="false"
+                      aria-label="Mandrágora — Disponible">
+                <span class="model-catalog-item__dot is-available" aria-hidden="true"></span>
+                <div class="model-catalog-item__content">
+                  <strong>Mandrágora</strong>
+                  <span>.glb · Disponible</span>
+                </div>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
               </button>
             </div>
           </aside>
@@ -428,7 +447,7 @@
           </div>
           <div>
             <p class="partes-accesibles__eyebrow">Alternativa accesible</p>
-            <h3 class="partes-accesibles__title" id="partes-title">Partes del Fauno — descripción por lista</h3>
+            <h3 class="partes-accesibles__title" id="partes-title">Partes de Fauno — descripción por lista</h3>
             <p class="partes-accesibles__desc">
               Si usas lector de pantalla o prefieres no usar el visualizador 3D,
               aquí puedes explorar cada parte del modelo con su descripción y audio.
@@ -544,7 +563,7 @@
   </a>
 
   <script src="nav.js"></script>
-  <script type="module" src="fauno-modelo.js"></script>
+  <script type="module" src="modelo-switcher.js"></script>
   <script src="fauno-recursos.js"></script>
 </body>
 </html>

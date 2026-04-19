@@ -90,34 +90,33 @@ window.C360Audio = (function () {
     window.C360Audio.onEnded(audioEl);
   });
 
-  // Asignar listeners a todos los botones de audio del fallback
-  document.querySelectorAll('.parte-audio-btn').forEach(function (btn) {
+  // Delegación de eventos sobre el contenedor de la lista accesible.
+  // Funciona con botones generados dinámicamente al cambiar de modelo.
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.parte-audio-btn');
+    if (!btn) return;
+
     var src = btn.dataset.audio;
     if (!src) return;
 
-    btn.setAttribute('aria-pressed', 'false');
+    // Toggle: si este botón ya está sonando, detener
+    if (window.C360Audio.isPlaying(audioEl) && activeBtn === btn) {
+      window.C360Audio.stop();
+      return;
+    }
 
-    btn.addEventListener('click', function () {
-      // Toggle: si este botón ya está sonando, detener
-      if (window.C360Audio.isPlaying(audioEl) && activeBtn === btn) {
-        window.C360Audio.stop();
-        return;
-      }
-
-      // Reproducir (C360Audio detiene lo anterior y llama su onStop)
-      // El onStop del botón previo reseteará su UI correctamente
-      window.C360Audio.play(audioEl, src, function () {
-        resetBtn(btn);
-        if (activeBtn === btn) activeBtn = null;
-      });
-
-      // Actualizar UI del botón activo
-      activeBtn = btn;
-      btn.classList.add('is-playing');
-      btn.querySelector('i').className   = 'fa-solid fa-pause';
-      btn.querySelector('span').textContent = 'Pausar audio';
-      btn.setAttribute('aria-pressed', 'true');
+    // Reproducir (C360Audio detiene lo anterior y llama su onStop)
+    window.C360Audio.play(audioEl, src, function () {
+      resetBtn(btn);
+      if (activeBtn === btn) activeBtn = null;
     });
+
+    // Actualizar UI del botón activo
+    activeBtn = btn;
+    btn.classList.add('is-playing');
+    btn.querySelector('i').className      = 'fa-solid fa-pause';
+    btn.querySelector('span').textContent = 'Pausar audio';
+    btn.setAttribute('aria-pressed', 'true');
   });
 
 })();
