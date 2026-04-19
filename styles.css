@@ -1452,7 +1452,7 @@ body.modal-open {
 
   /* Dots centrados, con separación limpia del track */
   .componentes-controls {
-    margin-top: 1rem;
+    margin-top: 1.75rem;
     justify-content: center;
   }
 
