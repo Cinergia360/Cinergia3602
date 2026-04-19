@@ -1400,63 +1400,31 @@ body.modal-open {
     text-align: center;
   }
 
-  /* Carrusel componentes: grid separa track (fila 1) de controles (fila 2) */
+  /* Carrusel componentes: sin flechas en mobile — swipe + dots */
   .componentes-carousel {
     padding: 0;
-    display: grid;
-    grid-template-columns: 44px 1fr 44px;
-    grid-template-rows: auto auto;
-    align-items: start;
   }
 
-  /* Track: fila 1, ocupa las 3 columnas */
-  .componentes-track {
-    grid-column: 1 / -1;
-    grid-row: 1;
-    height: auto;
-    min-height: 360px;
-    overflow: visible;
-    position: relative;
-  }
-
-  /* Botones: salen del flujo absoluto y entran al grid como items de fila 2 */
+  /* Flechas ocultas: swipe táctil y dots son suficientes */
   .carousel-btn-side {
-    position: relative;
-    top: auto; bottom: auto; left: auto; right: auto;
-    transform: none;
-    width: 44px;
-    height: 44px;
-    grid-row: 2;
-    align-self: center;
-    justify-self: center;
-    margin-top: 0.5rem;
+    display: none;
   }
 
-  .carousel-btn-side:hover {
-    transform: translateY(-1px);
+  /* Track: altura automática, sin overflow que corte el contenido */
+  .componentes-track {
+    height: auto;
+    min-height: 380px;
+    overflow: visible;
   }
 
-  .carousel-btn-side.left  { grid-column: 1; }
-  .carousel-btn-side.right { grid-column: 3; }
-
-  /* Dots: fila 2, columna central */
-  .componentes-controls {
-    grid-column: 2;
-    grid-row: 2;
-    margin-top: 0;
-    padding: 0.5rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
+  /* Slide ocupa el ancho completo de la card */
   .componente-slide {
     position: absolute;
     width: 100%;
     max-width: 100%;
   }
 
-  /* Más espacio interno para que el CTA respire al fondo de la card */
+  /* Padding inferior para que el CTA respire */
   .componente-slide-content {
     padding-bottom: 1.5rem;
   }
@@ -1477,8 +1445,15 @@ body.modal-open {
     pointer-events: none;
   }
 
+  /* Imagen con buena proporción en mobile */
   .componente-slide img {
-    height: 190px;
+    height: 185px;
+  }
+
+  /* Dots centrados, con separación limpia del track */
+  .componentes-controls {
+    margin-top: 1rem;
+    justify-content: center;
   }
 
   /* Concepto (móvil) */
@@ -1514,14 +1489,14 @@ body.modal-open {
   }
 }
 
-/* ≤480px — teléfonos pequeños: imagen ligeramente más compacta */
+/* ≤480px — teléfonos pequeños */
 @media (max-width: 480px) {
   .componente-slide img {
-    height: 170px;        /* 20px menos que 620px → más espacio para contenido */
+    height: 165px;
   }
 
   .componentes-track {
-    min-height: 340px;
+    min-height: 360px;
   }
 }
 
