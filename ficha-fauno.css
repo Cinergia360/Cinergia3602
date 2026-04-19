@@ -506,10 +506,14 @@ body {
 }
 
 @media (max-width: 780px) {
+  .ficha-hero__media {
+    aspect-ratio: 3 / 2;
+    max-height: 360px;
+    min-height: 220px;
+  }
+
   .ficha-hero__media img {
-    max-height: 320px;
-    object-fit: cover;
-    width: 100%;
+    max-height: none;
   }
 }
 

@@ -469,7 +469,8 @@ body {
   }
 
   .repo-item__media {
-    min-height: 220px;
+    aspect-ratio: 16 / 9;
+    min-height: 200px;
   }
 
   .repo-item__status {
@@ -504,7 +505,8 @@ body {
   }
 
   .repo-item__media {
-    min-height: 200px;
+    aspect-ratio: 3 / 2;
+    min-height: unset;
     border-radius: 12px;
   }
 
