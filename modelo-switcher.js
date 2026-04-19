@@ -21,7 +21,7 @@ const CATALOG = [
   {
     key:   "ofelia",
     label: "Ofelia",
-    src:   "./ofeliamodelo.js"
+    src:   "./ofelia-modelo.js"
   },
   {
     key:   "hombrepálido",
