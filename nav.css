@@ -289,6 +289,19 @@
 
 /* ====== MOBILE ====== */
 @media (max-width: 780px) {
+  /* Barra nav sólida en mobile: blur + transparencia confunden sobre el hero */
+  .site-nav {
+    background: rgba(245,243,239,0.98);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .site-nav.site-nav--dark {
+    background: rgba(22,19,18,0.98);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
   .site-nav__toggle {
     display: flex;
   }
