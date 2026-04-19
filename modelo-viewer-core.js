@@ -13,6 +13,7 @@
 import * as THREE from "https://unpkg.com/three@0.160.0/build/three.module.js";
 import { OrbitControls } from "https://unpkg.com/three@0.160.0/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from "https://unpkg.com/three@0.160.0/examples/jsm/loaders/GLTFLoader.js";
+import { DRACOLoader } from "https://unpkg.com/three@0.160.0/examples/jsm/loaders/DRACOLoader.js";
 
 // ─── Estado del viewer activo ───
 let _renderer      = null;
@@ -103,7 +104,11 @@ export function initViewer({ modelPath, partes }) {
   dirLight.position.set(2, 3, 2);
   scene.add(dirLight);
 
-  const loader    = new GLTFLoader();
+  const dracoLoader = new DRACOLoader();
+  dracoLoader.setDecoderPath("https://www.gstatic.com/draco/versioned/decoders/1.5.6/");
+
+  const loader = new GLTFLoader();
+  loader.setDRACOLoader(dracoLoader);
   let   model     = null;
   const raycaster = new THREE.Raycaster();
   const mouse     = new THREE.Vector2();
