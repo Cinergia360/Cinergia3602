@@ -14,16 +14,16 @@ import { initViewer } from "./modelo-viewer-core.js";
 
 export const PARTES = {
   "HP_Rostro": {
-    title:       "Rostro",
+    title:       "Cabeza",
     text:        "Tiene una forma alargada y cae hacia abajo como si la piel estuviera escurriendo o colgando. En el rostro no hay ojos. Solo se distinguen dos aberturas pequeñas en la parte alta, donde va la nariz. Más abajo aparece una boca abierta con dientes pequeños y separados. Se siente extraño e inquietante.",
-    audioNombre: "audio/HombrePalido_Rostro_nombre.mp3",
-    audioDesc:   "audio/HombrePalido_Rostro_desc.mp3"
+    audioNombre: "audio/HP_CABEZA.mp3",
+    audioDesc:   "audio/HP_CABEZA DESC.mp3"
   },
   "HP_Mano": {
     title:       "Mano",
     text:        "Junto a la cabeza aparece una mano grande, con dedos muy largos, delgados y estirados. En el centro de la palma hay un ojo abierto y muy marcado. Esta parte ayuda a entender que el personaje no mira con el rostro, sino con las manos.",
-    audioNombre: "audio/HombrePalido_Mano_nombre.mp3",
-    audioDesc:   "audio/HombrePalido_Mano_desc.mp3"
+    audioNombre: "audio/HP_MANO.mp3",
+    audioDesc:   "audio/HP_MANO DESC.mp3"
   }
 };
 

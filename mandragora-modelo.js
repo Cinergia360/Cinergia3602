@@ -16,8 +16,8 @@ export const PARTES = {
   "Mandragora": {
     title:       "Mandrágora",
     text:        "Remite a un cuerpo pequeño, parecido al de un ser humano, pero está completamente deformada. No tiene bordes claros ni partes bien definidas. La cabeza, el torso, los brazos y las piernas apenas se distinguen entre los surcos y pliegues naturales de la raíz. La superficie es irregular, con curvas, hundimientos, bultos y salidas delgadas que parecen raíces más finas. En lugar de una figura limpia o simétrica, aparece un cuerpo retorcido, orgánico y confuso, que mantiene la apariencia propia de una mandrágora arrancada de la tierra.",
-    audioNombre: "audio/Mandragora_nombre.mp3",
-    audioDesc:   "audio/Mandragora_desc.mp3"
+    audioNombre: "audio/MANDRAGORA.mp3",
+    audioDesc:   "audio/MANDRAGORA DESC.mp3"
   }
 };
 

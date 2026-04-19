@@ -14,16 +14,16 @@ import { initViewer } from "./modelo-viewer-core.js";
 
 export const PARTES = {
   "O_Rostro": {
-    title:       "Rostro",
+    title:       "Cabeza",
     text:        "Tiene el cabello corto, lacio y partido al centro. Cae hacia los lados hasta la altura de la mandíbula y lleva un moño pequeño en la parte superior. Su rostro es pequeño y ovalado, con ojos grandes, nariz corta y boca pequeña. La expresión transmite atención, asombro y cautela.",
-    audioNombre: "audio/Ofelia_Rostro_nombre.mp3",
-    audioDesc:   "audio/Ofelia_Rostro_desc.mp3"
+    audioNombre: "audio/O_CABEZA",
+    audioDesc:   "audio/O_CABEZA DESC.mp3"
   },
   "O_Ropa": {
     title:       "Ropa",
     text:        "Lleva un vestido sencillo con cuello redondeado y mangas cortas con volumen. La ropa refuerza la imagen de una niña pequeña y contrasta con el entorno duro que la rodea.",
-    audioNombre: "audio/Ofelia_Ropa_nombre.mp3",
-    audioDesc:   "audio/Ofelia_Ropa_desc.mp3"
+    audioNombre: "audio/O_ROPA.mp3",
+    audioDesc:   "audio/O_ROPA DESC.mp3"
   }
 };
 
