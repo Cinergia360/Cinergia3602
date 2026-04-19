@@ -1400,42 +1400,54 @@ body.modal-open {
     text-align: center;
   }
 
-  /* Carrusel componentes: solo una tarjeta visible */
+  /* Carrusel componentes: grid separa track (fila 1) de controles (fila 2) */
   .componentes-carousel {
     padding: 0;
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    grid-template-rows: auto auto;
+    align-items: start;
   }
 
-  /* Botones: sobre los dots, no encima del contenido de la card */
+  /* Track: fila 1, ocupa las 3 columnas */
+  .componentes-track {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    height: auto;
+    min-height: 360px;
+    overflow: visible;
+    position: relative;
+  }
+
+  /* Botones: salen del flujo absoluto y entran al grid como items de fila 2 */
   .carousel-btn-side {
-    top: auto;
-    bottom: 1.6rem;     /* posicionados claramente por encima de los dots */
+    position: relative;
+    top: auto; bottom: auto; left: auto; right: auto;
     transform: none;
     width: 44px;
     height: 44px;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    margin-top: 0.5rem;
   }
 
   .carousel-btn-side:hover {
     transform: translateY(-1px);
   }
 
-  .carousel-btn-side.left {
-    left: calc(50% - 64px);
-  }
+  .carousel-btn-side.left  { grid-column: 1; }
+  .carousel-btn-side.right { grid-column: 3; }
 
-  .carousel-btn-side.right {
-    right: calc(50% - 64px);
-  }
-
-  /* Dots: inmediatamente debajo de los botones, sin margin excesivo */
+  /* Dots: fila 2, columna central */
   .componentes-controls {
-    margin-top: 0.5rem;
-  }
-
-  /* Track: altura suficiente para imagen + contenido + zona de controles */
-  .componentes-track {
-    height: auto;
-    min-height: 420px;  /* imagen(190) + contenido(170) + buffer(60) para controles */
-    overflow: visible;  /* elimina el clip que cortaba el CTA */
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .componente-slide {
@@ -1509,7 +1521,7 @@ body.modal-open {
   }
 
   .componentes-track {
-    min-height: 400px;    /* ajustado: imagen(170) + contenido(170) + buffer(60) */
+    min-height: 340px;
   }
 }
 
