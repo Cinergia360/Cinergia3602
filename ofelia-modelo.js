@@ -21,7 +21,7 @@ export const PARTES = {
   },
   "O_Ropa": {
     title:       "Ropa",
-    text:        "Lleva un vestido sencillo con cuello redondeado y mangas cortas con volumen. La ropa refuerza la imagen de una niña pequeña y contrasta con el entorno duro que la rodea.",
+    text:        "Lleva un vestido sencillo con cuello redondeado y mangas cortas con volumen. La ropa refuerza la imagen de una niña pequeña.",
     audioNombre: "audio/O_ROPA.mp3",
     audioDesc:   "audio/O_ROPA DESC.mp3"
   }

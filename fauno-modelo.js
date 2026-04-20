@@ -29,7 +29,7 @@ export const PARTES = {
     title:       "Torso",
     text:        "El torso está erguido y lleno de relieves. En el pecho hay curvas, espirales y líneas hundidas. No parece un cuerpo humano simétrico. La superficie también recuerda a la madera y a la corteza.",
     audioNombre: "audio/F_TORSO.mp3",
-    audioDesc:   "audio/Fauno_TORSO DESC.mp3"
+    audioDesc:   "audio/F_TORSO DESC.mp3"
   }
 };
 
