@@ -27,7 +27,7 @@ export const PARTES = {
   },
   "CV_Ropa": {
     title:       "Uniforme",
-    text:        "Debajo del rostro aparece un uniforme de mando ligado al franquismo. El cuello está cerrado hasta arriba. Los hombros son rectos y marcados, con hombreras visibles y con insignias. En el cuello también hay insignias y en el centro un botón. Toda la ropa está hecha para proyectar orden, disciplina y control.",
+    text:        "Debajo aparece un uniforme de mando ligado al franquismo. El cuello está cerrado hasta arriba. Los hombros son rectos y marcados, con hombreras visibles y con insignias. En el cuello también hay insignias y en el centro un botón. Toda la ropa está hecha para proyectar orden, disciplina y control.",
     audioNombre: "audio/CV_ROPA.mp3",
     audioDesc:   "audio/CV_ROPA DESC.mp3"
   }

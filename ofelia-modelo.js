@@ -16,7 +16,7 @@ export const PARTES = {
   "O_Rostro": {
     title:       "Cabeza",
     text:        "Tiene el cabello corto, lacio y partido al centro. Cae hacia los lados hasta la altura de la mandíbula y lleva un moño pequeño en la parte superior. Su rostro es pequeño y ovalado, con ojos grandes, nariz corta y boca pequeña. La expresión transmite atención, asombro y cautela.",
-    audioNombre: "audio/O_CABEZA",
+    audioNombre: "audio/O_CABEZA.mp3",
     audioDesc:   "audio/O_CABEZA DESC.mp3"
   },
   "O_Ropa": {
