@@ -296,35 +296,239 @@ Por eso, el sistema conecta distintos apoyos para que puedas encontrar tu propia
 
           <div class="llegada-tabs" role="tablist" aria-label="Opciones de transporte">
             <button class="llegada-tab is-active" role="tab" id="tab-cablebus" aria-selected="true" aria-controls="panel-cablebus" type="button">
-              <i class="fa-solid fa-cable-car" aria-hidden="true"></i>
-              Cablebús
+              <i class="fa-solid fa-train" aria-hidden="true"></i>
+              Tren + Cablebús
             </button>
             <button class="llegada-tab" role="tab" id="tab-autobus" aria-selected="false" aria-controls="panel-autobus" type="button">
               <i class="fa-solid fa-bus" aria-hidden="true"></i>
-              Autobús + cablebús
+              Autobús + Cablebús
             </button>
             <button class="llegada-tab" role="tab" id="tab-auto" aria-selected="false" aria-controls="panel-auto" type="button">
               <i class="fa-solid fa-car" aria-hidden="true"></i>
-              Automóvil
+              Automóvil / moto
             </button>
           </div>
 
           <div class="llegada-panels">
+
+            <!-- ── TREN + CABLEBÚS ── -->
             <div class="llegada-panel is-active" role="tabpanel" id="panel-cablebus" aria-labelledby="tab-cablebus">
-              <div class="llegada-mapa" role="img" aria-label="Mapa de ruta en Cablebús hacia la Cineteca">
-                <img src="img/mapa-cablebus.png" alt="Mapa con la ruta de Cablebús hacia la Cineteca Nacional Chapultepec.">
+              <div class="llegada-ruta-grid">
+                <div class="llegada-pasos-col">
+                  <p class="llegada-eyebrow">Tu ruta paso a paso</p>
+                  <ol class="llegada-steps">
+                    <li class="llegada-step">
+                      <span class="llegada-step-num" aria-hidden="true">1</span>
+                      <div class="llegada-step-body">
+                        <p class="llegada-step-title">Llega a la estación Vasco de Quiroga del Tren Interurbano</p>
+                        <p class="llegada-step-desc">Aquí comienza tu conexión hacia la Cineteca Nacional Chapultepec.</p>
+                      </div>
+                    </li>
+                    <li class="llegada-step">
+                      <span class="llegada-step-num" aria-hidden="true">2</span>
+                      <div class="llegada-step-body">
+                        <p class="llegada-step-title">Camina hacia la estación Cablebús Vasco de Quiroga</p>
+                        <p class="llegada-step-desc">Sigue la señalética para hacer la transferencia entre ambos sistemas.</p>
+                      </div>
+                    </li>
+                    <li class="llegada-step">
+                      <span class="llegada-step-num" aria-hidden="true">3</span>
+                      <div class="llegada-step-body">
+                        <p class="llegada-step-title">Toma el Cablebús en dirección Los Pinos</p>
+                        <p class="llegada-step-desc">Tu parada de llegada es <strong>Cineteca / Bodega de Arte</strong>.</p>
+                      </div>
+                    </li>
+                    <li class="llegada-step">
+                      <span class="llegada-step-num" aria-hidden="true">4</span>
+                      <div class="llegada-step-body">
+                        <p class="llegada-step-title">Continúa a pie hacia la Cineteca Nacional Chapultepec</p>
+                        <p class="llegada-step-desc">Desde la estación Cineteca / Bodega de Arte sigue el recorrido señalado hasta la entrada del recinto.</p>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+                <div class="llegada-mapa-col">
+                  <div class="llegada-mapa">
+                    <img
+                      src="img/MapasCinergia360-01.svg"
+                      alt="Mapa del recorrido Tren + Cablebús hasta Cineteca Nacional Chapultepec."
+                      class="llegada-truth-map"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="llegada-leyenda">
+                    <div class="llegada-leyenda-item">
+                      <svg width="16" height="16" viewBox="311 456 87 87" aria-hidden="true"><circle cx="354.18" cy="499.32" r="41.16" fill="#cef03a"/><text transform="translate(337.42 513.84)" font-family="Lexend,sans-serif" font-size="48" font-weight="800" fill="#1e1b1a">A</text></svg>
+                      <span>Estación Tren — Vasco de Quiroga</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="16" height="16" viewBox="915 708 87 87" aria-hidden="true"><circle cx="958.6" cy="751.41" r="41.16" fill="#cef03a"/><text transform="translate(942.09 765.93)" font-family="Lexend,sans-serif" font-size="48" font-weight="800" fill="#1e1b1a">B</text></svg>
+                      <span>Estación Cablebús — Vasco de Quiroga</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="16" height="16" viewBox="1238 180 87 87" aria-hidden="true"><circle cx="1281.5" cy="222.99" r="41.16" fill="#cef03a"/><text transform="translate(1265.08 237.51)" font-family="Lexend,sans-serif" font-size="48" font-weight="800" fill="#1e1b1a">C</text></svg>
+                      <span>Estación Cablebús — Cineteca / Bodega de Arte</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="16" height="16" viewBox="1505 531 87 87" aria-hidden="true"><circle cx="1548.49" cy="574.16" r="41.16" fill="#de2173"/><polygon fill="#cef03a" points="1548.5 587.54 1531.97 599.58 1538.31 580.15 1521.74 568.15 1542.2 568.18 1548.49 548.74 1554.78 568.18 1575.25 568.15 1558.68 580.15 1565.02 599.58"/></svg>
+                      <span>Cineteca Nacional Chapultepec</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="13" height="16" viewBox="293 453 122 143" aria-hidden="true"><path fill="#1e1b1a" fill-rule="evenodd" d="M353.75,595.93l-21.33-31.4c-8.68-13.34-29.08-47.08-30.69-61.74s4.84-30,14.52-40.6c19.74-20.4,56.14-20.92,76.09-.53,10.14,11.14,16.37,27.41,14.04,42.49-1.52,9.85-9.37,24.44-14.17,33.49-6.3,11.56-13.23,22.51-20.69,33.38l-17.77,24.91ZM380.23,499.32c0-14.4-11.68-26.08-26.08-26.08s-26.08,11.68-26.08,26.08,11.68,26.08,26.08,26.08,26.08-11.68,26.08-26.08Z"/></svg>
+                      <span>Estás aquí</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="22" height="6" viewBox="0 0 22 6" aria-hidden="true"><line x1="0" y1="3" x2="22" y2="3" stroke="#1c1c1c" stroke-width="4" stroke-dasharray="6 6" stroke-linecap="square"/></svg>
+                      <span>Ruta caminando</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="22" height="6" viewBox="0 0 22 6" aria-hidden="true"><line x1="0" y1="3" x2="22" y2="3" stroke="#0d09e6" stroke-width="4"/></svg>
+                      <span>Ruta Cablebús</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- ── AUTOBÚS + CABLEBÚS ── -->
             <div class="llegada-panel" role="tabpanel" id="panel-autobus" aria-labelledby="tab-autobus" hidden>
-              <div class="llegada-mapa" role="img" aria-label="Mapa de ruta en Autobús y Cablebús hacia la Cineteca">
-                <img src="img/mapa-autobus.png" alt="Mapa con la ruta de Autobús y Cablebús hacia la Cineteca Nacional Chapultepec.">
+              <div class="llegada-ruta-grid">
+                <div class="llegada-pasos-col">
+                  <p class="llegada-eyebrow">Tu ruta paso a paso</p>
+                  <ol class="llegada-steps">
+                    <li class="llegada-step">
+                      <span class="llegada-step-num" aria-hidden="true">1</span>
+                      <div class="llegada-step-body">
+                        <p class="llegada-step-title">Autobús por Av. Vasco de Quiroga</p>
+                        <p class="llegada-step-desc">Rutas hacia Tacubaya, Observatorio o Calle 10 / Hotel de México pasan por aquí.</p>
+                      </div>
+                    </li>
+                    <li class="llegada-step">
+                      <span class="llegada-step-num" aria-hidden="true">2</span>
+                      <div class="llegada-step-body">
+                        <p class="llegada-step-title">Baja frente al Cablebús Vasco de Quiroga</p>
+                        <p class="llegada-step-desc">Pide que te bajen ahí. La estación del Cablebús está en la acera norte de la avenida.</p>
+                      </div>
+                    </li>
+                    <li class="llegada-step">
+                      <span class="llegada-step-num" aria-hidden="true">3</span>
+                      <div class="llegada-step-body">
+                        <p class="llegada-step-title">Sube al Cablebús → Cineteca / Bodega de Arte</p>
+                        <p class="llegada-step-desc">Dirección Los Pinos. La siguiente parada es tu destino.</p>
+                      </div>
+                    </li>
+                    <li class="llegada-step">
+                      <span class="llegada-step-num" aria-hidden="true">4</span>
+                      <div class="llegada-step-body">
+                        <p class="llegada-step-title">Continúa a pie hacia la Cineteca Nacional Chapultepec</p>
+                        <p class="llegada-step-desc">Desde la estación sigue el recorrido señalado hasta la entrada del recinto. Son aproximadamente 6 minutos a pie.</p>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+                <div class="llegada-mapa-col">
+                  <div class="llegada-mapa">
+                    <img
+                      src="img/MapasCinergia360-02.svg"
+                      alt="Mapa del recorrido Autobús + Cablebús hasta Cineteca Nacional Chapultepec."
+                      class="llegada-truth-map"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="llegada-leyenda">
+                    <div class="llegada-leyenda-item">
+                      <svg width="16" height="16" viewBox="948 857 94 94" aria-hidden="true"><circle cx="994.74" cy="903.93" r="44.49" fill="#cef03a"/><text transform="translate(976.9 919.62)" font-family="Lexend,sans-serif" font-size="48" font-weight="800" fill="#1e1b1a">A</text></svg>
+                      <span>Estación de Autobús</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="16" height="16" viewBox="804 699 94 94" aria-hidden="true"><circle cx="850.17" cy="745.26" r="44.49" fill="#cef03a"/><text transform="translate(832.33 760.95)" font-family="Lexend,sans-serif" font-size="48" font-weight="800" fill="#1e1b1a">B</text></svg>
+                      <span>Estación Cablebús — Vasco de Quiroga</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="16" height="16" viewBox="1175 111 94 94" aria-hidden="true"><circle cx="1221.78" cy="157.04" r="44.49" fill="#cef03a"/><text transform="translate(1204.04 172.74)" font-family="Lexend,sans-serif" font-size="48" font-weight="800" fill="#1e1b1a">C</text></svg>
+                      <span>Estación Cablebús — Cineteca / Bodega de Arte</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="16" height="16" viewBox="1464 490 94 94" aria-hidden="true"><circle cx="1510.38" cy="536.62" r="44.49" fill="#de2173"/><polygon fill="#cef03a" points="1510.38 551.09 1492.52 564.1 1499.37 543.1 1481.46 530.12 1503.58 530.15 1510.37 509.14 1517.18 530.15 1539.3 530.12 1521.39 543.09 1528.24 564.1"/></svg>
+                      <span>Cineteca Nacional Chapultepec</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="13" height="16" viewBox="293 453 122 143" aria-hidden="true"><path fill="#1e1b1a" fill-rule="evenodd" d="M353.75,595.93l-21.33-31.4c-8.68-13.34-29.08-47.08-30.69-61.74s4.84-30,14.52-40.6c19.74-20.4,56.14-20.92,76.09-.53,10.14,11.14,16.37,27.41,14.04,42.49-1.52,9.85-9.37,24.44-14.17,33.49-6.3,11.56-13.23,22.51-20.69,33.38l-17.77,24.91ZM380.23,499.32c0-14.4-11.68-26.08-26.08-26.08s-26.08,11.68-26.08,26.08,11.68,26.08,26.08,26.08,26.08-11.68,26.08-26.08Z"/></svg>
+                      <span>Estás aquí</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="22" height="6" viewBox="0 0 22 6" aria-hidden="true"><line x1="0" y1="3" x2="22" y2="3" stroke="#1c1c1c" stroke-width="4" stroke-dasharray="6 6" stroke-linecap="square"/></svg>
+                      <span>Ruta caminando</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="22" height="6" viewBox="0 0 22 6" aria-hidden="true"><line x1="0" y1="3" x2="22" y2="3" stroke="#0d09e6" stroke-width="4"/></svg>
+                      <span>Ruta Cablebús</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- ── AUTOMÓVIL / MOTO ── -->
             <div class="llegada-panel" role="tabpanel" id="panel-auto" aria-labelledby="tab-auto" hidden>
-              <div class="llegada-mapa" role="img" aria-label="Mapa de ruta en Automóvil hacia la Cineteca">
-                <img src="img/mapa-automovil.png" alt="Mapa con la ruta en automóvil hacia la Cineteca Nacional Chapultepec.">
+              <div class="llegada-ruta-grid">
+                <div class="llegada-pasos-col">
+                  <p class="llegada-eyebrow">Tu ruta paso a paso</p>
+                  <ol class="llegada-steps">
+                    <li class="llegada-step">
+                      <span class="llegada-step-num" aria-hidden="true">1</span>
+                      <div class="llegada-step-body">
+                        <p class="llegada-step-title">Llega por Av. Vasco de Quiroga</p>
+                        <p class="llegada-step-desc">Desde cualquier punto de la ciudad, el acceso vehicular es por esta avenida.</p>
+                      </div>
+                    </li>
+                    <li class="llegada-step">
+                      <span class="llegada-step-num" aria-hidden="true">2</span>
+                      <div class="llegada-step-body">
+                        <p class="llegada-step-title">Gira en Calle Bandera</p>
+                        <p class="llegada-step-desc">Está junto a la estación Cablebús Vasco de Quiroga. Gira a la derecha y sigue la señalética hacia el interior.</p>
+                      </div>
+                    </li>
+                    <li class="llegada-step">
+                      <span class="llegada-step-num" aria-hidden="true">3</span>
+                      <div class="llegada-step-body">
+                        <p class="llegada-step-title">Acceso peatonal al recinto</p>
+                        <p class="llegada-step-desc">Sigue el camino señalizado hasta la entrada de la Cineteca — aproximadamente 6 minutos a pie.</p>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+                <div class="llegada-mapa-col">
+                  <div class="llegada-mapa">
+                    <img
+                      src="img/MapasCinergia360-03.svg"
+                      alt="Mapa del acceso en automóvil o moto a la Cineteca Nacional Chapultepec por Av. Vasco de Quiroga y Calle Bandera."
+                      class="llegada-truth-map"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="llegada-leyenda">
+                    <div class="llegada-leyenda-item">
+                      <svg width="16" height="16" viewBox="742 824 87 87" aria-hidden="true"><circle cx="785.42" cy="866.91" r="41.16" fill="#cef03a"/><text transform="translate(768.66 881.43)" font-family="Lexend,sans-serif" font-size="48" font-weight="800" fill="#1e1b1a">A</text></svg>
+                      <span>Entrada vehicular</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="16" height="16" viewBox="1508 530 87 87" aria-hidden="true"><circle cx="1551.72" cy="573.68" r="41.16" fill="#de2173"/><polygon fill="#cef03a" points="1551.72 587.06 1535.19 599.1 1541.53 579.67 1524.96 567.67 1545.42 567.7 1551.71 548.26 1558.01 567.7 1578.47 567.67 1561.9 579.67 1568.25 599.1"/></svg>
+                      <span>Cineteca Nacional Chapultepec</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="13" height="16" viewBox="728 821 122 143" aria-hidden="true"><path fill="#1e1b1a" fill-rule="evenodd" d="M784.99,963.52l-21.33-31.4c-8.68-13.34-29.08-47.08-30.69-61.74s4.84-30,14.52-40.6c19.74-20.4,56.14-20.92,76.09-.53,10.14,11.14,16.37,27.41,14.04,42.49-1.52,9.85-9.37,24.44-14.17,33.49-6.3,11.56-13.23,22.51-20.69,33.38l-17.77,24.91ZM811.47,866.91c0-14.4-11.68-26.08-26.08-26.08s-26.08,11.68-26.08,26.08,11.68,26.08,26.08,26.08,26.08-11.68,26.08-26.08Z"/></svg>
+                      <span>Estás aquí</span>
+                    </div>
+                    <div class="llegada-leyenda-item">
+                      <svg width="22" height="6" viewBox="0 0 22 6" aria-hidden="true"><line x1="0" y1="3" x2="22" y2="3" stroke="#1e1b1a" stroke-width="4"/></svg>
+                      <span>Ruta vehicular</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>

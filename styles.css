@@ -1010,6 +1010,129 @@ body {
   }
 }
 
+/* ================= LLEGADA · CONTENIDO ENRIQUECIDO ================= */
+
+/* Grilla pasos | mapa */
+.llegada-ruta-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Eyebrow sobre los pasos */
+.llegada-eyebrow {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+/* Lista numerada de pasos */
+.llegada-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.llegada-step {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.llegada-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 17px;
+  top: 38px;
+  width: 2px;
+  bottom: 0;
+  background: var(--border-soft);
+}
+
+.llegada-step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--c360-indigo);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.llegada-step-body {
+  padding-top: 7px;
+  padding-bottom: 1.5rem;
+}
+
+.llegada-step-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.35;
+  margin-bottom: 3px;
+}
+
+.llegada-step-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* Columna del mapa */
+.llegada-mapa-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* El contenedor .llegada-mapa ya existe; truth-map ajusta la imagen SVG */
+.llegada-truth-map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Leyenda */
+.llegada-leyenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  padding: 0.65rem 0.85rem;
+  background: var(--c360-surface);
+  border-radius: 6px;
+}
+
+.llegada-leyenda-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-muted);
+  line-height: 1.2;
+}
+
+.llegada-leyenda-item svg {
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .llegada-ruta-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ================= CONTACTO ================= */
 .contacto {
   background-color: #1e1b1a;
