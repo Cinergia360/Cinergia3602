@@ -1022,10 +1022,8 @@ body {
 
 /* Eyebrow sobre los pasos */
 .llegada-eyebrow {
-  font-size: 9.5px;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  font-size: var(--type-component-title);
+  font-weight: 600;
   color: var(--text-muted);
   margin-bottom: 1rem;
 }
@@ -1059,7 +1057,7 @@ body {
   border-radius: 50%;
   background: var(--c360-indigo);
   color: #fff;
-  font-size: 13px;
+  font-size:var(--type-button);
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -1075,7 +1073,7 @@ body {
 }
 
 .llegada-step-title {
-  font-size: 13.5px;
+  font-size: var(--type-label);
   font-weight: 700;
   color: var(--text-main);
   line-height: 1.35;
@@ -1083,7 +1081,7 @@ body {
 }
 
 .llegada-step-desc {
-  font-size: 12px;
+  font-size:var(--type-body);
   color: var(--text-muted);
   line-height: 1.65;
 }
@@ -1116,7 +1114,7 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 10px;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-muted);
   line-height: 1.2;
